@@ -321,7 +321,9 @@
     host.appendChild(frag);
     host.setAttribute("data-vibe", state.vibe.id);
 
-    document.getElementById("viewport-url").textContent = "mavitrine.ca/" + cat.slug;
+    /* Maquette en sous-domaine : chaque commerce a son hôte, pas un sous-chemin.
+       Le slug sert d'étiquette d'hôte. (Aucun DNS derrière — c'est un aperçu.) */
+    document.getElementById("viewport-url").textContent = cat.slug + ".mavitrine.ca";
     document.getElementById("vibe-note").textContent = state.vibe.note;
 
     var comboCat = document.getElementById("combo-cat");
