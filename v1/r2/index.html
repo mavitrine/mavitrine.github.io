@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mavitrine — sites vitrines pour PME québécoises</title>
+<meta name="description" content="On construit votre site web avant que vous payiez. Une à trois versions complètes, en ligne sous 48 heures. Vous payez seulement si vous en gardez une.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2314514A'/%3E%3Crect x='6' y='8' width='20' height='16' fill='none' stroke='%23EDF1EE' stroke-width='2'/%3E%3Cpath d='M6 14h20M16 14v10' stroke='%23B87A2B' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="#haut">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">ma<strong>vitrine</strong></span>
+    </a>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="#compositeur">Le compositeur</a>
+      <a href="#demarche">La démarche</a>
+      <a href="#forfaits">Forfaits</a>
+      <a href="#engagements">Engagements</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Changer le thème">
+      <span class="theme-toggle-dot" aria-hidden="true"></span>
+      <span class="theme-toggle-label">Thème</span>
+    </button>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <!-- ───────────────────────── Hero ───────────────────────── -->
+  <section class="hero" id="haut">
+    <div class="shell">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="marker" aria-hidden="true"></span>Prélancement · Québec</p>
+          <h1 class="hero-title">
+            On construit votre site.
+            <em>Vous payez seulement si vous le gardez.</em>
+          </h1>
+          <p class="lede">
+            Remplissez un court formulaire sur votre commerce. On vous livre une à
+            trois versions complètes de votre site, déjà en ligne, sous 48&nbsp;heures.
+            Vous regardez, vous montrez à qui vous voulez, puis vous choisissez.
+            Si rien ne vous plaît, tout expire et vous n'avez rien payé.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Demander mes versions</a>
+            <a class="btn btn-ghost" href="#compositeur">Voir ce que ça donne</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hv-stack">
+            <div class="hv-card hv-card-back hv-card-back-2"></div>
+            <div class="hv-card hv-card-back hv-card-back-1"></div>
+            <div class="hv-card hv-card-front">
+              <div class="hv-chrome">
+                <span class="hv-dot"></span><span class="hv-dot"></span><span class="hv-dot"></span>
+                <span class="hv-url">mavitrine.ca/le-comptoir-saint-jean</span>
+              </div>
+              <div class="hv-body">
+                <div class="hv-shot"></div>
+                <p class="hv-eyebrow">Cuisine du marché · Trois-Rivières</p>
+                <p class="hv-title">Ce que le marché donne, cuisiné le jour même.</p>
+                <div class="hv-rows">
+                  <div class="hv-row"><span>Truite de la Mauricie</span><span class="hv-price">31&nbsp;$</span></div>
+                  <div class="hv-row"><span>Jarret d'agneau</span><span class="hv-price">34&nbsp;$</span></div>
+                </div>
+                <span class="hv-btn">Réserver une table</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <dl class="facts">
+        <div class="fact">
+          <dt>Délai de livraison</dt>
+          <dd><span class="fact-num">48</span><span class="fact-unit">h</span></dd>
+        </div>
+        <div class="fact">
+          <dt>Versions proposées</dt>
+          <dd><span class="fact-num">1–3</span></dd>
+        </div>
+        <div class="fact fact-free">
+          <dt>À payer avant de choisir</dt>
+          <dd><span class="fact-num">0</span><span class="fact-unit">$</span></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ──────────────────── Le compositeur ──────────────────── -->
+  <section class="section" id="compositeur">
+    <div class="shell">
+      <p class="eyebrow"><span class="marker" aria-hidden="true"></span>Le compositeur</p>
+      <h2 class="section-title">Deux choix, et le site se compose.</h2>
+      <p class="section-lede">
+        Votre <strong>catégorie</strong> détermine les sections de la page, leur ordre
+        et l'action qu'on met de l'avant. Votre <strong>ambiance</strong> détermine les
+        couleurs, la typographie et le rythme. Le reste, ce sont vos vraies
+        informations. Essayez les combinaisons&nbsp;:
+      </p>
+
+      <div class="compositor">
+        <div class="controls">
+          <fieldset class="control-group">
+            <legend>Catégorie</legend>
+            <div class="chips" id="chips-categorie" role="radiogroup" aria-label="Catégorie de commerce"></div>
+          </fieldset>
+          <fieldset class="control-group">
+            <legend>Ambiance</legend>
+            <div class="chips" id="chips-ambiance" role="radiogroup" aria-label="Ambiance visuelle"></div>
+          </fieldset>
+          <p class="control-note" id="vibe-note"></p>
+
+          <div class="live-combo" aria-live="polite">
+            <span class="live-combo-label">Composition en direct</span>
+            <p class="live-combo-value">
+              <span id="combo-cat">Restaurant</span><span class="live-combo-x" aria-hidden="true"> × </span><span id="combo-vibe">Moderne épuré</span>
+            </p>
+            <span class="live-combo-cue" aria-hidden="true">aperçu en direct</span>
+          </div>
+        </div>
+
+        <figure class="viewport">
+          <div class="viewport-frame">
+            <div class="viewport-chrome" aria-hidden="true">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="viewport-url" id="viewport-url">mavitrine.ca/exemple</span>
+            </div>
+            <div class="preview" id="preview" data-vibe="moderne"></div>
+          </div>
+          <figcaption>
+            Exemple illustratif. Les commerces montrés ici sont fictifs&nbsp;: ils servent
+            à démontrer la composition, pas à représenter de vrais clients.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────── La démarche ───────────────────── -->
+  <section class="section section-alt" id="demarche">
+    <div class="shell">
+      <p class="eyebrow"><span class="marker" aria-hidden="true"></span>La démarche</p>
+      <h2 class="section-title">Quatre étapes, dans cet ordre.</h2>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Le formulaire</h3>
+          <p>
+            Une dizaine de questions sur votre commerce&nbsp;: ce que vous faites, où
+            vous êtes, vos heures, vos services, vos photos et votre logo si vous
+            en avez. Une quinzaine de minutes, en une seule fois.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>La composition</h3>
+          <p>
+            Nos gabarits et nos ambiances assemblent une à trois versions
+            complètes, remplies avec vos vraies informations. Aucune page n'est
+            dessinée à partir de zéro&nbsp;: c'est ce qui garde la qualité constante.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>L'aperçu</h3>
+          <p>
+            Vos versions sont mises en ligne à une adresse temporaire, avec une
+            date d'expiration. Envoyez le lien à votre associée, à votre conjoint,
+            à vos habitués. Prenez le temps de regarder sur votre téléphone.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">4</span>
+          <h3>Votre décision</h3>
+          <p>
+            Vous gardez celle que vous préférez&nbsp;: elle devient votre site, à votre
+            adresse. Sinon vous ne faites rien, l'aperçu expire de lui-même et
+            vous n'avez rien payé, rien signé, rien à annuler.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ─────────────────────── Forfaits ─────────────────────── -->
+  <section class="section" id="forfaits">
+    <div class="shell">
+      <p class="eyebrow"><span class="marker" aria-hidden="true"></span>Forfaits</p>
+      <h2 class="section-title">Un montant à la mise en ligne, puis l'hébergement.</h2>
+      <p class="section-lede">
+        Le montant mensuel couvre l'hébergement, le certificat de sécurité, les
+        sauvegardes et vos petites modifications. C'est ce qui nous permet de
+        rester disponibles après la livraison plutôt que de disparaître.
+      </p>
+
+      <div class="tiers">
+
+        <article class="tier">
+          <header class="tier-head">
+            <h3>Vitrine</h3>
+            <p class="tier-for">Pour le commerce de quartier qui se fait connaître par le bouche-à-oreille et Google.</p>
+          </header>
+          <p class="price">
+            <span class="price-amount">249&nbsp;$</span>
+            <span class="price-note">à la mise en ligne</span>
+          </p>
+          <p class="price price-sub">
+            <span class="price-amount">12&nbsp;$</span>
+            <span class="price-note">par mois</span>
+          </p>
+          <p class="tier-addr"><code>mavitrine.ca/votre-nom</code></p>
+          <ul class="tier-list">
+            <li>Site complet, une page, adapté au téléphone</li>
+            <li>Hébergement et certificat de sécurité inclus</li>
+            <li>Petites modifications incluses</li>
+            <li>Formulaire de contact vers votre courriel</li>
+          </ul>
+        </article>
+
+        <article class="tier tier-featured">
+          <header class="tier-head">
+            <p class="tier-flag">Recommandé</p>
+            <h3>Pro</h3>
+            <p class="tier-for">Pour l'entreprise établie qui veut sa propre adresse, son référencement et sa crédibilité.</p>
+          </header>
+          <p class="price">
+            <span class="price-amount">599&nbsp;$</span>
+            <span class="price-note">à la mise en ligne</span>
+          </p>
+          <p class="price price-sub">
+            <span class="price-amount">24&nbsp;$</span>
+            <span class="price-note">par mois</span>
+          </p>
+          <p class="tier-addr"><code>votreentreprise.ca</code></p>
+          <ul class="tier-list">
+            <li>Tout ce qu'il y a dans Vitrine</li>
+            <li>Votre propre nom de domaine, enregistré <strong>à votre nom</strong></li>
+            <li>Plusieurs pages si votre commerce en demande</li>
+            <li>Référencement local configuré (fiche Google, données structurées)</li>
+          </ul>
+        </article>
+
+        <article class="tier">
+          <header class="tier-head">
+            <h3>Pro —&nbsp;domaine existant</h3>
+            <p class="tier-for">Pour ceux qui possèdent déjà leur adresse et veulent seulement un site qui la mérite.</p>
+          </header>
+          <p class="price">
+            <span class="price-amount">499&nbsp;$</span>
+            <span class="price-note">à la mise en ligne</span>
+          </p>
+          <p class="price price-sub">
+            <span class="price-amount">24&nbsp;$</span>
+            <span class="price-note">par mois</span>
+          </p>
+          <p class="tier-addr"><code>votre-domaine-actuel.ca</code></p>
+          <ul class="tier-list">
+            <li>Tout ce qu'il y a dans Pro</li>
+            <li>On branche votre domaine actuel, vous n'y touchez pas</li>
+            <li>Vous restez propriétaire chez votre registraire</li>
+            <li>Redirections depuis votre ancien site</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <p class="fineprint">
+        Deux mois offerts sur l'abonnement annuel payé d'avance. Les prix
+        affichés sont préliminaires pendant le prélancement et seront confirmés
+        par écrit avant tout engagement. Taxes en sus.
+      </p>
+    </div>
+  </section>
+
+  <!-- ────────────────────── Engagements ───────────────────── -->
+  <section class="section section-alt" id="engagements">
+    <div class="shell">
+      <p class="eyebrow"><span class="marker" aria-hidden="true"></span>Engagements</p>
+      <h2 class="section-title">Ce qu'on fait, et ce qu'on refuse de faire.</h2>
+
+      <div class="pledges">
+        <article class="pledge">
+          <h3>On n'invente rien</h3>
+          <p>
+            Tout ce qui apparaît sur votre site vient de ce que vous nous avez
+            fourni. Pas de «&nbsp;au service de la région depuis 1985&nbsp;» si vous ne
+            nous l'avez pas dit. Pas de témoignage inventé, pas de prix
+            approximatif, pas de statistique sortie de nulle part. Un site qui
+            ment vous nuit plus qu'il ne vous sert.
+          </p>
+        </article>
+        <article class="pledge">
+          <h3>Le domaine reste à vous</h3>
+          <p>
+            Sur les forfaits Pro, votre nom de domaine est enregistré à votre nom,
+            dans votre dossier. Si un jour vous allez ailleurs, vous partez avec.
+            On préfère vous garder parce que le service est bon, pas parce que
+            vous êtes coincé.
+          </p>
+        </article>
+        <article class="pledge">
+          <h3>Lisible par tout le monde</h3>
+          <p>
+            Chaque page est vérifiée pour le contraste selon la norme WCAG&nbsp;AA
+            avant d'être publiée. Vos clients de 60&nbsp;ans qui regardent votre menu
+            au soleil sur leur téléphone font partie de vos clients.
+          </p>
+        </article>
+        <article class="pledge">
+          <h3>Rapide, parce que simple</h3>
+          <p>
+            Vos pages sont du HTML statique&nbsp;: pas de gestionnaire de contenu à
+            mettre à jour, pas de base de données à pirater, aucune police ni
+            aucun script chargé depuis un serveur étranger. Ça ouvre
+            instantanément, même sur une connexion faible.
+          </p>
+        </article>
+        <article class="pledge">
+          <h3>Aucun traqueur</h3>
+          <p>
+            Pas de cookie publicitaire, pas de pixel de réseau social, rien qui
+            suive vos visiteurs. Si vous voulez des statistiques de fréquentation,
+            on installe une solution qui respecte la vie privée, et on vous le dit.
+          </p>
+        </article>
+        <article class="pledge">
+          <h3>Les modifications sont prévues</h3>
+          <p>
+            Changement d'heures, nouveau prix, photo à remplacer, faute de frappe&nbsp;:
+            c'est inclus, vous écrivez et c'est fait. Une refonte complète ou de
+            nouvelles pages, c'est une soumission à part&nbsp;— annoncée d'avance,
+            jamais facturée par surprise.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────────────────────── FAQ ───────────────────────── -->
+  <section class="section" id="questions">
+    <div class="shell shell-narrow">
+      <p class="eyebrow"><span class="marker" aria-hidden="true"></span>Questions</p>
+      <h2 class="section-title">Ce qu'on nous demande.</h2>
+
+      <div class="faq">
+        <details>
+          <summary>Et si aucune des versions ne me plaît&nbsp;?</summary>
+          <div class="faq-body"><p>
+            Vous ne faites rien. L'aperçu expire tout seul à la date indiquée et
+            il n'y a aucun montant à payer. C'est le principe&nbsp;: on prend le risque
+            de construire avant que vous décidiez.
+          </p></div>
+        </details>
+        <details>
+          <summary>Est-ce que j'ai besoin d'un nom de domaine&nbsp;?</summary>
+          <div class="faq-body"><p>
+            Non. Le forfait Vitrine vous donne une adresse sous
+            <code>mavitrine.ca</code>, sans achat de domaine. Vous pourrez passer à
+            votre propre adresse plus tard sans refaire le site.
+          </p></div>
+        </details>
+        <details>
+          <summary>De quoi avez-vous besoin de ma part&nbsp;?</summary>
+          <div class="faq-body"><p>
+            Le formulaire, et c'est à peu près tout. Vos photos et votre logo si
+            vous en avez&nbsp;: sinon on compose avec de la photographie sous licence
+            appropriée à votre domaine, et on dessine un logotype à partir du nom
+            de votre commerce.
+          </p></div>
+        </details>
+        <details>
+          <summary>Est-ce que je peux modifier mon site moi-même&nbsp;?</summary>
+          <div class="faq-body"><p>
+            Vous n'avez pas à le faire. Vous nous écrivez ce que vous voulez
+            changer et la modification est appliquée. C'est justement ce qu'on
+            enlève de votre assiette&nbsp;— la plupart des sites de PME vieillissent mal
+            parce que personne n'a le temps d'ouvrir le tableau de bord.
+          </p></div>
+        </details>
+        <details>
+          <summary>Le site est-il en français&nbsp;?</summary>
+          <div class="faq-body"><p>
+            Oui, et bilingue si vous le demandez. On sert des commerces
+            québécois&nbsp;: le français est le défaut, pas une option ajoutée à la fin.
+          </p></div>
+        </details>
+        <details>
+          <summary>Vous êtes en prélancement&nbsp;— ça veut dire quoi&nbsp;?</summary>
+          <div class="faq-body"><p>
+            Que le service ouvre bientôt et qu'on constitue le premier groupe de
+            commerces servis. Écrivez-nous&nbsp;: on vous recontacte dès l'ouverture du
+            formulaire, et les premiers inscrits passent en premier.
+          </p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── Contact ────────────────────── -->
+  <section class="section section-cta" id="contact">
+    <div class="shell shell-narrow">
+      <p class="eyebrow"><span class="marker" aria-hidden="true"></span>Prendre contact</p>
+      <h2 class="section-title">Dites-nous ce que vous faites.</h2>
+      <p class="section-lede">
+        Écrivez-nous le nom de votre commerce et ce que vous faites, en deux
+        lignes. On vous répond avec le formulaire dès qu'il ouvre&nbsp;— et vous êtes
+        parmi les premiers servis.
+      </p>
+      <p class="hero-actions">
+        <a class="btn btn-primary" href="mailto:bonjour@mavitrine.ca?subject=Mon%20commerce%20%E2%80%94%20mavitrine">
+          bonjour@mavitrine.ca
+        </a>
+      </p>
+      <p class="fineprint">
+        On écrit seulement aux commerces qui nous ont écrit en premier, et
+        uniquement à propos de leur site. Aucune liste d'envoi, aucun partage de
+        vos coordonnées.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p class="footer-brand">ma<strong>vitrine</strong></p>
+    <p class="footer-line">Sites vitrines pour petites entreprises du Québec.</p>
+    <p class="footer-fine">
+      Service en prélancement. Ce site sert lui-même de démonstration&nbsp;: il est
+      construit avec le système d'ambiances et de composants décrit plus haut.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

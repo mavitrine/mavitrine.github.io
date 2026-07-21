@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Série v1 — trois itérations — mavitrine</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --bg:#0b0f0e; --panel:#111614; --line:#1e2724; --ink:#e8efec; --mut:#8fa39c;
+    --primary:#5AD2C4; --accent:#e8b23a; --good:#5AD2C4; --mid:#e8b23a; --low:#d98b7a;
+    --serif:Georgia,"Times New Roman",serif; --shadow:0 18px 50px -20px rgba(0,0,0,.7);
+  }
+  *{box-sizing:border-box} html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#10201d 0%,var(--bg) 55%);
+    color:var(--ink);font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    padding:clamp(1.25rem,4vw,4rem)}
+  a{color:inherit}
+  .wrap{max-width:1180px;margin:0 auto}
+  nav{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:2.5rem;font-size:.82rem;letter-spacing:.03em}
+  nav a{padding:.4rem .75rem;border:1px solid var(--line);border-radius:999px;color:var(--mut);text-decoration:none;transition:.15s}
+  nav a:hover{border-color:var(--primary);color:var(--ink)}
+  nav a.on{background:var(--primary);color:#04110e;border-color:var(--primary);font-weight:600}
+  .eyebrow{color:var(--primary);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;margin:0 0 .6rem}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.1rem,1.2rem+3.8vw,3.6rem);
+    line-height:1.04;letter-spacing:-.02em;margin:0 0 1rem}
+  .intro{color:#c7d3ce;max-width:60ch;margin:0 0 .6rem}
+  .method{color:var(--mut);font-size:.9rem;max-width:60ch;margin:0 0 3rem}
+  .grid{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    box-shadow:var(--shadow);display:flex;flex-direction:column;transition:.18s}
+  .card:hover{transform:translateY(-4px);border-color:#2c3a36}
+  .card.live{border-color:var(--primary);box-shadow:0 0 0 1px var(--primary),var(--shadow)}
+  .shot{position:relative;display:block;aspect-ratio:1440/1600;overflow:hidden;background:#0d1211;border-bottom:1px solid var(--line)}
+  .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .tag{position:absolute;top:.7rem;left:.7rem;font-size:.65rem;letter-spacing:.12em;font-weight:700;
+    padding:.28rem .55rem;border-radius:6px}
+  .tag-live{background:var(--primary);color:#04110e}
+  .tag-base{background:#26322e;color:var(--mut)}
+  .body{padding:1.2rem 1.3rem 1.4rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
+  .body header{display:flex;align-items:baseline;justify-content:space-between;gap:1rem}
+  .body h2{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin:0}
+  .score{font-family:var(--serif);font-size:1.9rem;line-height:1;color:var(--c)}
+  .score small{font-size:.8rem;color:var(--mut)}
+  .body p{margin:0;color:#c1cec9;font-size:.93rem;flex:1}
+  .open{margin-top:.3rem;color:var(--primary);text-decoration:none;font-size:.9rem;font-weight:600}
+  .open:hover{text-decoration:underline}
+  footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--mut);font-size:.82rem;max-width:70ch}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a href="../v0/">Original (v0)</a><a href="../v1/" aria-current="page" class="on">Série v1</a><a href="../v2/">Série v2</a><a href="../">Version en ligne</a></nav>
+    <p class="eyebrow">Galerie d'itérations · v1</p>
+    <h1>Série v1 — trois itérations</h1>
+    <p class="intro">Trois versions du site, générées par une boucle agentique à partir de l'original. À chaque tour, l'agent fait un choix de direction artistique, puis un panel de juges le note et le compare au meilleur en cours. Le tour 2 a gagné et est aujourd'hui la version en ligne.</p>
+    <p class="method">Note = médiane d'un panel de 3 juges indépendants (0–10), aveugles aux notes précédentes.</p>
+    <div class="grid">
+      <article class="card">
+        <a class="shot" href="../v0/" aria-label="Ouvrir Point de départ">
+          <img loading="lazy" src="../v0/shot-desktop.png" alt="Aperçu — Point de départ">
+          
+          <span class="tag tag-base">POINT DE DÉPART</span>
+        </a>
+        <div class="body">
+          <header>
+            <h2>Point de départ</h2>
+            <span class="score" style="--c:var(--mid)">7.2<small>/10</small></span>
+          </header>
+          <p>L'original : sobre, sérif, teal — mais très plat, une seule teinte de fond du haut en bas, de grandes gouttières vides. C'est le « un peu fade » qui a lancé tout l'exercice.</p>
+          <a class="open" href="../v0/">Voir cette version →</a>
+        </div>
+      </article>
+      <article class="card">
+        <a class="shot" href="r1/" aria-label="Ouvrir Tour 1">
+          <img loading="lazy" src="r1/shot-desktop.png" alt="Aperçu — Tour 1">
+          
+          
+        </a>
+        <div class="body">
+          <header>
+            <h2>Tour 1</h2>
+            <span class="score" style="--c:var(--mid)">7.1<small>/10</small></span>
+          </header>
+          <p>Première tentative de profondeur : carte-navigateur flottante dans le héros avec deux versions en surimpression, halo teal pour le contraste figure/fond, type d'affichage plus imposant, bandeau de statistiques avec filet teal et élévation. La médiane a légèrement baissé — la boucle ne l'a pas retenu.</p>
+          <a class="open" href="r1/">Voir cette version →</a>
+        </div>
+      </article>
+      <article class="card live">
+        <a class="shot" href="r2/" aria-label="Ouvrir Tour 2">
+          <img loading="lazy" src="r2/shot-desktop.png" alt="Aperçu — Tour 2">
+          <span class="tag tag-live">EN LIGNE</span>
+          
+        </a>
+        <div class="body">
+          <header>
+            <h2>Tour 2</h2>
+            <span class="score" style="--c:var(--mid)">7.6<small>/10</small></span>
+          </header>
+          <p>Le pic, et la version en ligne. Traitement duotone « sérigraphie » qui lie toutes les images en une série ; colonne de contrôles collante + lecture « Composition en direct » qui corrige les zones mortes du compositeur ; pastilles et aperçu qui s'élèvent au survol ; l'ambre devient un système « coût zéro » (l'étape 4 « vous n'avez rien payé » aussi en ambre).</p>
+          <a class="open" href="r2/">Voir cette version →</a>
+        </div>
+      </article>
+      <article class="card">
+        <a class="shot" href="r3/" aria-label="Ouvrir Tour 3">
+          <img loading="lazy" src="r3/shot-desktop.png" alt="Aperçu — Tour 3">
+          
+          
+        </a>
+        <div class="body">
+          <header>
+            <h2>Tour 3</h2>
+            <span class="score" style="--c:var(--mid)">7.3<small>/10</small></span>
+          </header>
+          <p>Grain argentique (bruit SVG feTurbulence) sur les images ; ambre replié dans le teal pour un accent unique ; grammaire de panneaux partagée. Noté sous le tour 2 : retirer l'ambre a rendu la page plus monotone — le panel l'a vu.</p>
+          <a class="open" href="r3/">Voir cette version →</a>
+        </div>
+      </article>
+    </div>
+    <footer>
+      Chaque version est un site complet et autonome, généré puis noté automatiquement.
+      Les notes proviennent d'un panel de juges indépendants (médiane) ; elles mesurent l'esthétique,
+      pas l'exactitude du contenu. Pages en <code>noindex</code> — vitrine interne.
+    </footer>
+  </div>
+</body>
+</html>
