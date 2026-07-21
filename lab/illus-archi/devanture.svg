@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="il-scene" viewBox="0 0 340 300" aria-hidden="true" focusable="false">
+<style>
+  /* Échelle tonale + hiérarchie de traits — valeurs du thème clair, écrites en
+     dur pour que ce fichier soit autonome. Dans le site, elles viennent des
+     jetons (--il-t1..t4, --il-ad) déclarés par thème. */
+  .f1{fill:#F4F7F5}.f2{fill:#E3E9E5}.f3{fill:#C6D1CB}.f4{fill:#8C9C95}
+  .fa{fill:#B87A2B}.fad{fill:#8A5A1C}
+  .w1,.w2,.w3{fill:none;stroke:#0F1E1B;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+  .w1{stroke-width:.7;opacity:.5}.w2{stroke-width:1.3}.w3{stroke-width:2.1}
+  .wa{fill:none;stroke:#8A5A1C;stroke-width:.9;opacity:.8;vector-effect:non-scaling-stroke}
+</style>
+
+  <!-- ombre portée : le bâtiment pèse -->
+  <path class="f3" opacity=".45" d="M300 278 L318 286 L58 286 L40 278 Z"/>
+
+  <!-- corps du bâtiment -->
+  <rect class="f1" x="40" y="42" width="260" height="236"/>
+
+  <!-- corniche : trois moulures de poids différents -->
+  <rect class="f3" x="34" y="28" width="272" height="9"/>
+  <rect class="f2" x="38" y="37" width="264" height="5"/>
+  <path class="w1" d="M38 37h264M34 28h272"/>
+
+  <!-- bandeau d'enseigne, panneau en retrait -->
+  <rect class="f2" x="40" y="42" width="260" height="30"/>
+  <rect class="f1" x="52" y="48" width="236" height="18"/>
+  <path class="w1" d="M52 48h236v18H52z"/>
+
+  <!-- auvent : trapèze (il avance vers nous) + lambrequin + nervures -->
+  <path class="fa"  d="M52 74 L288 74 L296 98 L44 98 Z"/>
+  <path class="wa"  d="M111 74 L107 98M170 74 L170 98M229 74 L233 98"/>
+  <path class="fad" d="M44 98 L296 98 L296 110 L44 110 Z"/>
+  <path class="w1"  d="M44 110h252"/>
+
+  <!-- imposte au-dessus de la vitrine -->
+  <rect class="f1" x="58" y="118" width="170" height="18"/>
+  <path class="w1" d="M100 118v18M143 118v18M186 118v18"/>
+  <path class="w2" d="M58 118h170v18H58z"/>
+
+  <!-- ── vitrine ─────────────────────────────────────────── -->
+  <rect class="f2" x="58" y="136" width="170" height="96"/>
+  <!-- plafond en retrait : la profondeur -->
+  <rect class="f3" x="58" y="136" width="170" height="24"/>
+  <!-- suspension + halo -->
+  <path class="w1" d="M143 136v20"/>
+  <path class="fa" d="M133 156 L153 156 L148 167 L138 167 Z"/>
+  <path class="fa" opacity=".13" d="M138 167 L148 167 L164 200 L122 200 Z"/>
+  <!-- comptoir + marchandise en silhouette -->
+  <rect class="f3" x="58" y="196" width="170" height="36"/>
+  <path class="w2" d="M58 196h170"/>
+  <g class="f4">
+    <path d="M80 196v-14a5 5 0 0 1 10 0v14z"/>
+    <path d="M100 196a11 7 0 0 1 22 0z"/>
+    <rect x="134" y="184" width="14" height="12" rx="1"/>
+    <path d="M162 196v-10h5v-6h5v6h5v10z"/>
+  </g>
+  <!-- reflet : une bande large et douce, pas des rayures -->
+  <path class="f1" opacity=".5" d="M72 232 L122 136 L150 136 L100 232 Z"/>
+  <!-- meneau + dormant par-dessus -->
+  <path class="w2" d="M143 136v96"/>
+  <path class="w3" d="M58 136h170v96H58z"/>
+
+  <!-- soubassement à panneaux -->
+  <rect class="f3" x="58" y="232" width="170" height="38"/>
+  <rect class="f2" x="68" y="239" width="68" height="24"/>
+  <rect class="f2" x="150" y="239" width="68" height="24"/>
+  <path class="w1" d="M68 239h68v24H68zM150 239h68v24h-68z"/>
+  <path class="w2" d="M58 232h170"/>
+
+  <!-- ── entrée en retrait ───────────────────────────────── -->
+  <rect class="f3" x="238" y="118" width="48" height="160"/>
+  <path class="w1" d="M238 118v160"/>
+  <rect class="f1" x="243" y="122" width="38" height="15"/>
+  <path class="w1" d="M243 122h38v15h-38z"/>
+  <!-- vantail -->
+  <rect class="f2" x="245" y="140" width="36" height="132"/>
+  <rect class="f1" x="250" y="147" width="26" height="74"/>
+  <rect class="f2" x="250" y="230" width="26" height="34"/>
+  <path class="w1" d="M250 147h26v74h-26zM250 230h26v34h-26z"/>
+  <path class="w2" d="M245 140h36v132h-36z"/>
+  <!-- poignée : une vraie barre de tirage -->
+  <rect class="fa" x="272" y="182" width="3.6" height="34" rx="1.8"/>
+  <!-- seuil -->
+  <rect class="f3" x="234" y="272" width="56" height="6"/>
+  <path class="w2" d="M234 272h56"/>
+
+  <!-- pilastres : le cadre architectural -->
+  <rect class="f2" x="40" y="110" width="14" height="168"/>
+  <path class="w1" d="M43 110v168M51 110v168"/>
+  <rect class="f2" x="286" y="110" width="14" height="168"/>
+  <path class="w1" d="M289 110v168M297 110v168"/>
+  <path class="w2" d="M40 278V110M300 278V110"/>
+
+  <!-- enseigne suspendue, potence + maillons -->
+  <path class="w2" d="M300 88h20"/>
+  <path class="w1" d="M304 88q6 6 12 0"/>
+  <path class="w1" d="M306 88v8M318 88v8"/>
+  <rect class="f1" x="301" y="96" width="26" height="19" rx="1"/>
+  <path class="w2" d="M301 96h26v19h-26z"/>
+  <path class="w1" d="M305 100h18v11h-18z"/>
+
+  <!-- sol -->
+  <path class="w2" d="M10 278h320"/>
+</svg>

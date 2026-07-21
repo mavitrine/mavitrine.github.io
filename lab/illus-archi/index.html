@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laboratoire — devanture architecturale (branche abandonnée) · mavitrine</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --bg:#0b0f0e; --panel:#111614; --line:#1e2724; --ink:#e8efec; --mut:#8fa39c;
+    --primary:#5AD2C4; --accent:#e8b23a; --warn:#d98b7a;
+    --serif:Georgia,"Times New Roman",serif; --shadow:0 18px 50px -20px rgba(0,0,0,.7);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#10201d 0%,var(--bg) 55%);
+    color:var(--ink);font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:clamp(1.25rem,4vw,4rem)}
+  a{color:inherit}
+  .wrap{max-width:1180px;margin:0 auto}
+  nav{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:2.5rem;font-size:.82rem;letter-spacing:.03em}
+  nav a{padding:.4rem .75rem;border:1px solid var(--line);border-radius:999px;color:var(--mut);text-decoration:none;transition:.15s}
+  nav a:hover{border-color:var(--primary);color:var(--ink)}
+  nav a.on{background:var(--primary);color:#04110e;border-color:var(--primary);font-weight:600}
+  .eyebrow{color:var(--warn);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;margin:0 0 .6rem}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.1rem,1.2rem+3.8vw,3.6rem);line-height:1.04;letter-spacing:-.02em;margin:0 0 1rem}
+  h2{font-family:var(--serif);font-weight:400;font-size:1.55rem;margin:2.6rem 0 .8rem}
+  h3{font-size:.95rem;margin:1.4rem 0 .4rem;color:var(--primary)}
+  .intro{color:#c7d3ce;max-width:66ch;margin:0 0 1.4rem}
+  p,li{max-width:70ch}
+  .finding{border-left:3px solid var(--warn);background:#1a120f;padding:.9rem 1.1rem;border-radius:0 10px 10px 0;max-width:70ch;margin:0 0 1rem;color:#f0d6cb;font-size:.93rem}
+  .note{border-left:3px solid var(--primary);background:#0c1a17;padding:.9rem 1.1rem;border-radius:0 10px 10px 0;max-width:70ch;margin:1rem 0;color:#cfeee6;font-size:.93rem}
+  .grid{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));margin:1.5rem 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+  .card.wide{grid-column:1/-1}
+  .shot{display:block;background:#eef2f0;line-height:0;border-bottom:1px solid var(--line)}
+  .shot img{width:100%;height:auto;display:block}
+  .body{padding:1.1rem 1.3rem 1.3rem}
+  .body h2{margin:0 0 .4rem;font-size:1.3rem}
+  .body p{color:var(--mut);font-size:.9rem;margin:.3rem 0 0}
+  .files a{display:inline-block;margin:.25rem .5rem .25rem 0;padding:.4rem .8rem;border:1px solid var(--line);border-radius:8px;
+    text-decoration:none;color:var(--primary);font-size:.86rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .files a:hover{border-color:var(--primary)}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.87em;background:#0c1a17;padding:.12rem .35rem;border-radius:4px;color:#cfeee6}
+  pre{background:#0c1210;border:1px solid var(--line);border-radius:10px;padding:1rem;overflow-x:auto;font-size:.83rem;line-height:1.5;max-width:100%}
+  table{border-collapse:collapse;margin:1rem 0;font-size:.9rem}
+  th,td{border-bottom:1px solid var(--line);padding:.5rem .9rem .5rem 0;text-align:left;vertical-align:top}
+  th{color:var(--mut);font-weight:600;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+  .foot{color:var(--mut);font-size:.85rem;margin-top:3rem;border-top:1px solid var(--line);padding-top:1.2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a href="../../v1/">Série v1</a>
+    <a href="../../v2/">Série v2</a>
+    <a href="../">Coulisses</a>
+    <a href="../illus-duo/">Duotone · restaurant</a>
+    <a href="../illus-salon/">Duotone · salon</a>
+    <a href="./" class="on" aria-current="page">Devanture architecturale</a>
+    <a href="../../">Version en ligne</a>
+  </nav>
+
+  <p class="eyebrow">Branche abandonnée · conservée pour trace</p>
+  <h1>La devanture architecturale</h1>
+
+  <p class="intro">
+    Une devanture dessinée à la main, en SVG, avec une hiérarchie de traits et une
+    échelle tonale à quatre valeurs. Elle vient d'une session parallèle qui cherchait
+    à sortir la page du « clipart », sans savoir que le style maison duotone avait
+    déjà été arrêté ailleurs.
+  </p>
+
+  <div class="finding">
+    <strong>Ce n'est pas un candidat.</strong> Cette pièce n'a pas été notée par le
+    panneau de <code>tools/beauty-loop</code> et n'entre pas en concurrence avec le
+    style maison fixé dans <code>vision/illustration-style.md</code> (duotone,
+    restaurant 7,5 / salon 7,4). Elle appartient à la branche « détail / réalisme »
+    que ce panneau plafonne à 6,0 — et elle est hors palette : gris neutres et laiton
+    au lieu de la rampe teal. Elle est publiée <em>uniquement</em> pour garder la trace
+    de la méthode, en vue de tâches futures.
+  </div>
+
+  <div class="grid">
+    <div class="card wide">
+      <div class="shot"><img src="devanture.png" alt="Devanture dessinée : corniche, bandeau d'enseigne, auvent, vitrine éclairée, soubassement à panneaux, entrée en retrait."></div>
+      <div class="body">
+        <h2>devanture.svg</h2>
+        <p>Autonome : styles embarqués, aucune dépendance, s'ouvre seul dans un navigateur. Dans la page, les tons viennent des jetons et suivent le thème clair/sombre.</p>
+        <p class="files" style="margin-top:.7rem">
+          <a href="devanture.svg">devanture.svg</a>
+          <a href="page/">la page complète →</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Comment ce SVG a été fabriqué</h2>
+
+  <div class="note">
+    <strong>À la main, pas par un générateur.</strong> Contrairement aux séries duotone,
+    aucun script ne produit ce fichier : ce sont des coordonnées écrites directement,
+    puis rendues et corrigées à l'écran (rendu → capture → critique → correction).
+    Il n'y a donc pas de « relancer la boucle » — il y a un fichier SVG et un contrat CSS.
+  </div>
+
+  <h3>1. Hiérarchie de traits</h3>
+  <p>Ce qui sépare le dessin du clipart : trois poids, jamais un seul trait uniforme.
+  <code>vector-effect:non-scaling-stroke</code> garde l'épaisseur constante quelle que
+  soit la taille d'affichage.</p>
+<pre>.w1 { stroke-width:.7;  opacity:.5 }   /* détail intérieur : moulures, feuillures */
+.w2 { stroke-width:1.3 }               /* structure : dormants, seuil, sol       */
+.w3 { stroke-width:2.1 }               /* contour porteur : la baie vitrée       */</pre>
+
+  <h3>2. Échelle tonale à quatre valeurs</h3>
+  <p>Deux aplats ne suffisent pas : il faut que la vitre, le plafond en retrait, le
+  comptoir et le soubassement se séparent par le <em>ton</em>, pas par le contour.</p>
+  <table>
+    <tr><th>Jeton</th><th>Clair</th><th>Sombre</th><th>Rôle</th></tr>
+    <tr><td><code>--il-t1</code></td><td>#F4F7F5</td><td>#223330</td><td>façade, imposte</td></tr>
+    <tr><td><code>--il-t2</code></td><td>#E3E9E5</td><td>#2C3F3A</td><td>vitre, panneaux</td></tr>
+    <tr><td><code>--il-t3</code></td><td>#C6D1CB</td><td>#3C524C</td><td>retrait, comptoir, soubassement</td></tr>
+    <tr><td><code>--il-t4</code></td><td>#8C9C95</td><td>#5E756D</td><td>silhouettes en vitrine</td></tr>
+    <tr><td><code>--il-ad</code></td><td>#8A5A1C</td><td>#A8763A</td><td>dessous d'auvent (accent assombri)</td></tr>
+  </table>
+
+  <div class="finding">
+    <strong>Deux pièges payés comptant — à ne pas repayer.</strong>
+    <p style="margin-top:.5rem"><strong>a) Une échelle en pourcentage n'est pas symétrique.</strong>
+    Dériver les tons par <code>color-mix(in oklab, encre N%, papier)</code> marche en
+    clair et s'effondre en sombre : 4 % d'encre claire sur papier sombre donne #1A2825
+    contre un fond #12201D — la devanture devient un bloc noir. En sombre, les tons
+    doivent <em>monter vers la lumière</em>. D'où des valeurs écrites par thème.</p>
+    <p style="margin-top:.5rem"><strong>b) <code>color-mix</code> sur un <code>fill</code> peut tout noircir.</strong>
+    Une propriété personnalisée est un flux de jetons : sur un navigateur sans
+    <code>color-mix(in oklab, …)</code>, <code>--t1</code> reste « définie » mais invalide,
+    donc <code>fill:var(--t1)</code> est invalide à la valeur calculée et retombe sur son
+    initiale — <strong>noir</strong>. Aucun <code>var(--t1, repli)</code> ne rattrape ça,
+    puisque la variable <em>est</em> définie. C'est pourquoi les couleurs sont écrites.</p>
+  </div>
+
+  <h3>3. Anatomie architecturale</h3>
+  <p>Le vocabulaire fait la crédibilité. De haut en bas : corniche à moulures
+  superposées · bandeau d'enseigne à panneau en retrait · auvent en trapèze (plus large
+  en bas, donc il avance) avec nervures et lambrequin assombri · imposte à petits bois ·
+  baie vitrée avec plafond en retrait, suspension et halo, comptoir, marchandise en
+  silhouette et un large reflet oblique · soubassement à deux panneaux · entrée en
+  retrait avec feuillure, imposte, vantail à deux panneaux et <em>vraie</em> barre de
+  tirage · pilastres de part et d'autre · ombre portée pour le poids.</p>
+
+  <div class="note">
+    Vocabulaire explicitement <strong>banni</strong>, parce qu'il ramène le clipart :
+    auvent festonné, arbre en pastille, poignée en pastille, trait unique uniforme,
+    aplats à deux tons.
+  </div>
+
+  <h3>4. Le contrat CSS</h3>
+  <p>Dans la page, le SVG ne porte aucune couleur : il porte des classes, et le contexte
+  fournit les jetons. Réutiliser la pièce ailleurs = fournir <code>.il-scene</code>.</p>
+<pre>.il-scene { --t1:var(--il-t1); --t2:var(--il-t2); --t3:var(--il-t3);
+            --t4:var(--il-t4); --ad:var(--il-ad); }
+.il-scene .f1{fill:var(--t1)} … .f4{fill:var(--t4)}
+.il-scene .fa{fill:var(--accent)}  .fad{fill:var(--ad)}</pre>
+
+  <h3>5. Rendre / capturer</h3>
+  <p>Aucun outil particulier — Chrome sans interface suffit :</p>
+<pre>google-chrome --headless=new --disable-gpu --hide-scrollbars \
+  --window-size=640,560 --force-device-scale-factor=2 \
+  --screenshot=devanture.png file://…/devanture.svg</pre>
+
+  <h2>Où vivent les sources</h2>
+  <p class="files">
+    <a href="page/">page/ — la page complète telle que dessinée</a>
+    <a href="devanture.svg">devanture.svg — la pièce seule</a>
+  </p>
+  <p style="color:var(--mut);font-size:.9rem">
+    La page embarque ses propres <code>assets/</code> : elle est figée et ne bougera pas
+    quand le site évoluera. Elle contient aussi deux autres essais de la même session —
+    une frise de devantures sous le pli, et des vitres calmes à petits bois en galerie
+    (à la place d'icônes, qui lisaient comme du remplissage).
+  </p>
+
+  <p class="foot">
+    Session parallèle du 21 juillet 2026. Conservé comme trace de méthode, pas comme
+    proposition. Le style maison reste le duotone décrit dans
+    <code>vision/illustration-style.md</code>.
+  </p>
+
+</div>
+</body>
+</html>
