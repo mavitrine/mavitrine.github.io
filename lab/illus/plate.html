@@ -1,0 +1,171 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#0b0f0e">
+<div style="width:840px;height:630px">
+<svg viewBox="0 0 320 240" width="840" height="630" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="p_bg" cx="28%" cy="10%" r="120%">
+      <stop offset="0" stop-color="#164138"/>
+      <stop offset="46%" stop-color="#0d302a"/>
+      <stop offset="100%" stop-color="#07211d"/>
+    </radialGradient>
+    <linearGradient id="p_table" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0" stop-color="#3a2a1c"/>
+      <stop offset="100%" stop-color="#160f0a"/>
+    </linearGradient>
+    <radialGradient id="p_plate" cx="38%" cy="20%" r="88%">
+      <stop offset="0" stop-color="#f3f6f0"/>
+      <stop offset="42%" stop-color="#d9dfd5"/>
+      <stop offset="76%" stop-color="#98a69a"/>
+      <stop offset="100%" stop-color="#4e5c51"/>
+    </radialGradient>
+    <radialGradient id="p_well" cx="42%" cy="26%" r="82%">
+      <stop offset="0" stop-color="#e8ede3"/>
+      <stop offset="60%" stop-color="#bcc5b8"/>
+      <stop offset="100%" stop-color="#77867a"/>
+    </radialGradient>
+    <radialGradient id="p_sauce" cx="42%" cy="30%" r="78%">
+      <stop offset="0" stop-color="#6a4522"/>
+      <stop offset="55%" stop-color="#43290f"/>
+      <stop offset="100%" stop-color="#241608"/>
+    </radialGradient>
+    <linearGradient id="p_platehi" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="p_meat" cx="36%" cy="28%" r="82%">
+      <stop offset="0" stop-color="#c58a54"/>
+      <stop offset="42%" stop-color="#8a4d24"/>
+      <stop offset="100%" stop-color="#3e2010"/>
+    </radialGradient>
+    <radialGradient id="p_meat2" cx="36%" cy="28%" r="82%">
+      <stop offset="0" stop-color="#b97e46"/>
+      <stop offset="45%" stop-color="#7a4321"/>
+      <stop offset="100%" stop-color="#361c0d"/>
+    </radialGradient>
+    <linearGradient id="p_puree" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0" stop-color="#ecdfb0"/>
+      <stop offset="100%" stop-color="#c3ac6e"/>
+    </linearGradient>
+    <radialGradient id="p_carrot" cx="34%" cy="26%" r="82%">
+      <stop offset="0" stop-color="#e29a48"/>
+      <stop offset="55%" stop-color="#c1752f"/>
+      <stop offset="100%" stop-color="#6f3f14"/>
+    </radialGradient>
+    <radialGradient id="p_spec" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="p_blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="p_dof" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="p_soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.3"/></filter>
+    <filter id="p_tiny" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="0.9"/></filter>
+    <filter id="p_grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer><feComposite operator="over" in2="SourceGraphic"/></filter>
+    <radialGradient id="p_vig" cx="50%" cy="44%" r="72%">
+      <stop offset="48%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#04140f" stop-opacity="0.64"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="320" height="240" fill="url(#p_bg)"/>
+  <!-- table hint behind plate, blurred -->
+  <rect x="0" y="0" width="320" height="90" fill="url(#p_table)" opacity="0.5" filter="url(#p_blur)"/>
+  <ellipse cx="240" cy="40" rx="60" ry="40" fill="#c8853a" opacity="0.12" filter="url(#p_blur)"/>
+
+  <!-- cast shadow -->
+  <ellipse cx="164" cy="170" rx="158" ry="72" fill="#03120e" opacity="0.55" filter="url(#p_blur)"/>
+
+  <!-- large plate, three-quarter -->
+  <ellipse cx="160" cy="140" rx="156" ry="92" fill="url(#p_plate)"/>
+  <!-- warm amber bounce, lower-right rim -->
+  <path d="M196 214 Q288 208 306 150 Q286 202 224 218 Q208 220 196 214 Z" fill="#c8853a" opacity="0.16" filter="url(#p_soft)"/>
+  <!-- reflective rim edges -->
+  <ellipse cx="160" cy="140" rx="156" ry="92" fill="none" stroke="#f6f9f3" stroke-opacity="0.42" stroke-width="1.4"/>
+  <ellipse cx="160" cy="142" rx="156" ry="92" fill="none" stroke="#03120e" stroke-opacity="0.35" stroke-width="1.1"/>
+  <!-- inner well -->
+  <ellipse cx="160" cy="140" rx="120" ry="66" fill="url(#p_well)"/>
+  <ellipse cx="160" cy="140" rx="120" ry="66" fill="none" stroke="#78877a" stroke-opacity="0.5" stroke-width="1.2"/>
+  <!-- glossy highlight arc, top-left (sharp gloss) -->
+  <path d="M18 116 Q80 58 210 52 Q120 66 66 108 Q40 116 18 116 Z" fill="url(#p_platehi)" opacity="0.75" filter="url(#p_dof)"/>
+  <ellipse cx="96" cy="82" rx="60" ry="10" fill="#ffffff" opacity="0.5" filter="url(#p_dof)" transform="rotate(-16 96 82)"/>
+
+  <!-- glossy sauce pool -->
+  <path d="M78 150 Q120 120 176 126 Q236 132 244 158 Q234 190 168 190 Q98 188 78 150 Z" fill="url(#p_sauce)"/>
+  <path d="M96 150 Q140 132 190 140" fill="none" stroke="#a9713a" stroke-width="1.6" opacity="0.5" filter="url(#p_soft)"/>
+  <ellipse cx="126" cy="146" rx="26" ry="8" fill="url(#p_spec)" opacity="0.5" transform="rotate(-14 126 146)"/>
+  <ellipse cx="196" cy="164" rx="14" ry="5" fill="url(#p_spec)" opacity="0.35"/>
+
+  <!-- puree swoosh (left) with slight sheen -->
+  <path d="M56 148 Q92 136 138 142 Q120 150 96 152 Q72 154 62 154 Q56 152 56 148 Z" fill="url(#p_puree)"/>
+  <path d="M64 147 Q96 141 128 145" fill="none" stroke="#f6ecc6" stroke-width="1.2" opacity="0.6"/>
+  <path d="M60 152 Q92 156 132 150" fill="none" stroke="#8a7440" stroke-width="1" opacity="0.4"/>
+
+  <!-- protein: seared medallion 1 (cast shadow into sauce, then body) -->
+  <ellipse cx="156" cy="160" rx="36" ry="14" fill="#1c0e05" opacity="0.5" filter="url(#p_soft)"/>
+  <ellipse cx="150" cy="150" rx="34" ry="24" fill="url(#p_meat)"/>
+  <ellipse cx="150" cy="146" rx="30" ry="19" fill="url(#p_meat2)"/>
+  <!-- sear crust ring -->
+  <ellipse cx="150" cy="146" rx="30" ry="19" fill="none" stroke="#3c2010" stroke-width="3" opacity="0.7"/>
+  <!-- core shadow lower-right -->
+  <path d="M150 146 m 30 0 a 30 19 0 0 1 -20 18 A 24 15 0 0 0 150 146 Z" fill="#2a1509" opacity="0.45"/>
+  <!-- grill marks -->
+  <g stroke="#3a1f0f" stroke-width="2.4" opacity="0.55" stroke-linecap="round">
+    <line x1="130" y1="138" x2="150" y2="156"/>
+    <line x1="144" y1="134" x2="166" y2="152"/>
+    <line x1="158" y1="136" x2="174" y2="150"/>
+  </g>
+  <!-- specular glisten -->
+  <ellipse cx="136" cy="138" rx="13" ry="5.5" fill="url(#p_spec)" opacity="0.7" transform="rotate(-16 136 138)"/>
+
+  <!-- protein: seared medallion 2 -->
+  <ellipse cx="200" cy="170" rx="30" ry="12" fill="#1c0e05" opacity="0.5" filter="url(#p_soft)"/>
+  <ellipse cx="196" cy="160" rx="28" ry="20" fill="url(#p_meat)"/>
+  <ellipse cx="196" cy="156" rx="24" ry="15" fill="url(#p_meat2)"/>
+  <ellipse cx="196" cy="156" rx="24" ry="15" fill="none" stroke="#3c2010" stroke-width="2.6" opacity="0.7"/>
+  <path d="M196 156 m 24 0 a 24 15 0 0 1 -16 14 A 19 12 0 0 0 196 156 Z" fill="#2a1509" opacity="0.45"/>
+  <g stroke="#3a1f0f" stroke-width="2" opacity="0.5" stroke-linecap="round">
+    <line x1="180" y1="150" x2="196" y2="164"/>
+    <line x1="192" y1="147" x2="210" y2="161"/>
+  </g>
+  <ellipse cx="186" cy="150" rx="10" ry="4.5" fill="url(#p_spec)" opacity="0.65" transform="rotate(-16 186 150)"/>
+
+  <!-- roasted baby carrot with volume -->
+  <ellipse cx="234" cy="136" rx="20" ry="6" fill="#4a2c10" opacity="0.5" filter="url(#p_soft)"/>
+  <path d="M214 132 Q234 122 250 128 Q244 140 224 140 Q214 138 214 132 Z" fill="url(#p_carrot)"/>
+  <path d="M216 136 Q232 142 248 134 Q244 140 224 140 Q216 138 216 136 Z" fill="#5c3414" opacity="0.4"/>
+  <ellipse cx="226" cy="128" rx="9" ry="3" fill="url(#p_spec)" opacity="0.55" transform="rotate(-16 226 128)"/>
+
+  <!-- microgreens scattered on top of food -->
+  <g stroke="#4f8a5c" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path d="M150 128 q4 -12 0 -20"/>
+    <path d="M156 130 q10 -8 8 -18"/>
+    <path d="M144 130 q-6 -8 -10 -14"/>
+    <path d="M198 138 q6 -10 4 -18"/>
+    <path d="M190 138 q-4 -8 -10 -12"/>
+  </g>
+  <g fill="#6faf74">
+    <ellipse cx="150" cy="107" rx="3.4" ry="1.8" transform="rotate(-16 150 107)"/>
+    <ellipse cx="165" cy="111" rx="3.2" ry="1.7" transform="rotate(22 165 111)"/>
+    <ellipse cx="132" cy="115" rx="3" ry="1.6" transform="rotate(-30 132 115)"/>
+    <ellipse cx="203" cy="119" rx="3" ry="1.6" transform="rotate(18 203 119)"/>
+  </g>
+  <!-- edible flower petals (sparing warm accent) -->
+  <g fill="#d68a4a" opacity="0.85">
+    <ellipse cx="176" cy="132" rx="3" ry="1.6" transform="rotate(30 176 132)"/>
+    <ellipse cx="126" cy="150" rx="2.6" ry="1.4" transform="rotate(-20 126 150)"/>
+  </g>
+  <!-- sauce dots + oil drops with tiny highlights -->
+  <g fill="#2a1809">
+    <circle cx="100" cy="168" r="3"/><circle cx="228" cy="176" r="2.4"/><circle cx="118" cy="180" r="2"/>
+  </g>
+  <g fill="#f0e6bc" opacity="0.6">
+    <circle cx="99" cy="166.5" r="0.9"/><circle cx="227" cy="174.5" r="0.8"/>
+  </g>
+
+  <!-- foreground rim sharp specular -->
+  <path d="M60 196 Q160 224 262 194" fill="none" stroke="#ffffff" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round"/>
+
+  <rect width="320" height="240" fill="url(#p_vig)"/>
+  <rect width="320" height="240" filter="url(#p_grain)" opacity="0.5"/>
+</svg>
+</div>
+</body>
+</html>
