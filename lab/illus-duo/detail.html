@@ -1,0 +1,54 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#0b0f0e">
+<div style="width:840px;height:630px">
+  <svg viewBox="0 0 320 240" width="840" height="630" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="dtbg" cx="34%" cy="14%" r="118%">
+        <stop offset="0" stop-color="#1c4c44"/>
+        <stop offset="55%" stop-color="#103b34"/>
+        <stop offset="100%" stop-color="#07211d"/>
+      </radialGradient>
+      <linearGradient id="dtglass" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#5AD2C4"/>
+        <stop offset="55%" stop-color="#40897a"/>
+        <stop offset="100%" stop-color="#2a635a"/>
+      </linearGradient>
+      <linearGradient id="dtwine" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#1c4c44"/>
+        <stop offset="100%" stop-color="#0d302a"/>
+      </linearGradient>
+      <radialGradient id="dtflame" cx="50%" cy="38%" r="62%">
+        <stop offset="0" stop-color="#e8b23a" stop-opacity="0.65"/>
+        <stop offset="55%" stop-color="#e8b23a" stop-opacity="0.14"/>
+        <stop offset="100%" stop-color="#e8b23a" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="dtvig" cx="50%" cy="46%" r="72%">
+        <stop offset="50%" stop-color="#000" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#04140f" stop-opacity="0.55"/>
+      </radialGradient>
+    </defs>
+    <rect width="320" height="240" fill="url(#dtbg)"/>
+    <line x1="0" y1="168" x2="320" y2="168" stroke="#2f6459" stroke-opacity="0.4" stroke-width="1"/>
+
+    <!-- wine glass -->
+    <path d="M96 60 Q96 118 128 122 Q160 118 160 60 Z" fill="url(#dtglass)" opacity="0.9"/>
+    <path d="M100 66 Q102 108 128 114 Q154 108 156 66 Z" fill="url(#dtwine)"/>
+    <path d="M100 66 Q128 78 156 66" fill="none" stroke="#5AD2C4" stroke-width="1.6" opacity="0.5"/>
+    <path d="M104 74 Q106 90 114 102" fill="none" stroke="#cfeee6" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
+    <rect x="126" y="122" width="4" height="52" rx="2" fill="#2a635a"/>
+    <ellipse cx="128" cy="178" rx="26" ry="7" fill="#22574e"/>
+    <ellipse cx="128" cy="178" rx="26" ry="7" fill="none" stroke="#3f8577" stroke-opacity="0.45" stroke-width="1.2"/>
+
+    <!-- candle: single amber note is the flame + its tight halo -->
+    <rect x="204" y="118" width="24" height="60" rx="4" fill="#2a635a"/>
+    <path d="M204 122 Q216 116 228 122" fill="none" stroke="#5AD2C4" stroke-width="1.4" opacity="0.5"/>
+    <!-- thin rim-light down the lit left edge so the candle shares the glass's rendering language -->
+    <path d="M205 123 L205 173" fill="none" stroke="#cfeee6" stroke-width="1.4" stroke-linecap="round" opacity="0.4"/>
+    <ellipse cx="216" cy="180" rx="14" ry="5" fill="#1a463e"/>
+    <line x1="216" y1="112" x2="216" y2="118" stroke="#173e37" stroke-width="2"/>
+    <ellipse cx="216" cy="102" rx="15" ry="21" fill="url(#dtflame)"/>
+    <path d="M216 96 Q210 106 216 112 Q222 106 216 96 Z" fill="#e8b23a"/>
+    <path d="M216 101 Q213 107 216 111 Q219 107 216 101 Z" fill="#cfeee6" opacity="0.85"/>
+
+    <rect width="320" height="240" fill="url(#dtvig)"/>
+  </svg>
+</div>

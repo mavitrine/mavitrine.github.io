@@ -1,0 +1,53 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#0b0f0e">
+<div style="width:1080px;height:450px">
+                  <svg class="hv-photo" viewBox="0 0 360 150" width="1080" height="450" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                    <defs>
+                      <radialGradient id="hvbg" cx="30%" cy="10%" r="118%">
+                        <stop offset="0" stop-color="#1c4c44"/>
+                        <stop offset="55%" stop-color="#103b34"/>
+                        <stop offset="100%" stop-color="#07211d"/>
+                      </radialGradient>
+                      <radialGradient id="hvplate" cx="40%" cy="30%" r="78%">
+                        <stop offset="0" stop-color="#40897a"/>
+                        <stop offset="68%" stop-color="#2a635a"/>
+                        <stop offset="100%" stop-color="#1a463e"/>
+                      </radialGradient>
+                      <linearGradient id="hvfish" x1="0.1" y1="0" x2="0.5" y2="1">
+                        <stop offset="0" stop-color="#5AD2C4"/>
+                        <stop offset="52%" stop-color="#40897a"/>
+                        <stop offset="100%" stop-color="#2a635a"/>
+                      </linearGradient>
+                      <filter id="hvblur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter>
+                      <radialGradient id="hvvig" cx="50%" cy="44%" r="72%">
+                        <stop offset="52%" stop-color="#000" stop-opacity="0"/>
+                        <stop offset="100%" stop-color="#04140f" stop-opacity="0.5"/>
+                      </radialGradient>
+                    </defs>
+                    <rect width="360" height="150" fill="url(#hvbg)"/>
+
+                    <!-- single fork, left of plate -->
+                    <g fill="#2f6b5f">
+                      <rect x="41" y="40" width="3" height="18" rx="1.5"/>
+                      <rect x="47" y="40" width="3" height="18" rx="1.5"/>
+                      <rect x="53" y="40" width="3" height="18" rx="1.5"/>
+                      <rect x="59" y="40" width="3" height="18" rx="1.5"/>
+                      <path d="M41 56 L62 56 L57 68 L46 68 Z"/>
+                      <rect x="49" y="66" width="6" height="52" rx="3"/>
+                    </g>
+
+                    <!-- plate: single rim, no inner rings -->
+                    <ellipse cx="196" cy="88" rx="106" ry="47" fill="#04140f" opacity="0.5" filter="url(#hvblur)"/>
+                    <ellipse cx="192" cy="76" rx="101" ry="43" fill="url(#hvplate)"/>
+                    <ellipse cx="192" cy="76" rx="101" ry="43" fill="none" stroke="#66a89a" stroke-opacity="0.45" stroke-width="1.5"/>
+
+                    <!-- fish: one confident silhouette, low swept dorsal + tapered fork, all edges soft, top-left light -->
+                    <path d="M180 59 Q200 47 216 52 Q214 60 214 63 Q196 60 180 59 Z" fill="url(#hvfish)"/>
+                    <path d="M140 76 Q148 60 186 58 Q220 58 230 70 Q246 64 258 58 Q250 70 246 76 Q250 82 258 94 Q246 88 230 82 Q220 94 186 94 Q148 92 140 76 Z" fill="url(#hvfish)"/>
+                    <circle cx="152" cy="72" r="3" fill="#07211d"/>
+                    <circle cx="151" cy="71" r="0.8" fill="#cfeee6"/>
+                    <path d="M150 66 Q168 59 188 62" fill="none" stroke="#cfeee6" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+
+                    <rect width="360" height="150" fill="url(#hvvig)"/>
+                  </svg>
+</div>
+</body>

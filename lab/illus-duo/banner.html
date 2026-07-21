@@ -1,0 +1,51 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#0b0f0e">
+<div style="width:1040px;height:440px">
+  <svg viewBox="0 0 520 220" width="1040" height="440" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="bnbg" cx="30%" cy="8%" r="120%">
+        <stop offset="0" stop-color="#1c4c44"/>
+        <stop offset="55%" stop-color="#103b34"/>
+        <stop offset="100%" stop-color="#07211d"/>
+      </radialGradient>
+      <radialGradient id="bnplate" cx="40%" cy="28%" r="82%">
+        <stop offset="0" stop-color="#40897a"/>
+        <stop offset="66%" stop-color="#2a635a"/>
+        <stop offset="100%" stop-color="#173e37"/>
+      </radialGradient>
+      <radialGradient id="bnbowl" cx="42%" cy="30%" r="80%">
+        <stop offset="0" stop-color="#1c4c44"/>
+        <stop offset="100%" stop-color="#0d302a"/>
+      </radialGradient>
+      <radialGradient id="bnfood" cx="38%" cy="26%" r="82%">
+        <stop offset="0" stop-color="#5AD2C4"/>
+        <stop offset="52%" stop-color="#40897a"/>
+        <stop offset="100%" stop-color="#2a635a"/>
+      </radialGradient>
+      <filter id="bnblur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+      <radialGradient id="bnvig" cx="50%" cy="46%" r="72%">
+        <stop offset="52%" stop-color="#000" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#04140f" stop-opacity="0.5"/>
+      </radialGradient>
+    </defs>
+    <rect width="520" height="220" fill="url(#bnbg)"/>
+
+    <!-- a signature dish in a deep bowl, seen slightly from above -->
+    <ellipse cx="266" cy="186" rx="162" ry="24" fill="#04140f" opacity="0.5" filter="url(#bnblur)"/>
+    <!-- bowl belly: an exterior wall gives real vessel depth (distinct from the flat plate spot) -->
+    <path d="M108 108 Q120 200 260 200 Q400 200 412 108 Z" fill="url(#bnbowl)"/>
+    <path d="M108 108 Q120 200 260 200 Q400 200 412 108" fill="none" stroke="#66a89a" stroke-opacity="0.28" stroke-width="1.4"/>
+    <!-- rim opening -->
+    <ellipse cx="260" cy="108" rx="152" ry="54" fill="url(#bnplate)"/>
+    <ellipse cx="260" cy="108" rx="152" ry="54" fill="none" stroke="#66a89a" stroke-opacity="0.5" stroke-width="1.6"/>
+    <!-- food filling the bowl, cresting just above the rim -->
+    <ellipse cx="258" cy="102" rx="138" ry="46" fill="url(#bnfood)"/>
+    <!-- single off-white specular carries the top-left light -->
+    <path d="M172 90 Q234 66 300 80" fill="none" stroke="#cfeee6" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+    <!-- single amber garnish -->
+    <ellipse cx="260" cy="100" rx="6" ry="2.6" fill="#04140f" opacity="0.4"/>
+    <circle cx="260" cy="96" r="4.6" fill="#e8b23a"/>
+
+    <rect width="520" height="220" fill="url(#bnvig)"/>
+  </svg>
+</div>
+</body>
