@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coulisses — toutes les versions · mavitrine</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --bg:#0b0f0e; --panel:#111614; --line:#1e2724; --ink:#e8efec; --mut:#8fa39c;
+    --primary:#5AD2C4; --accent:#e8b23a; --good:#5AD2C4; --mid:#e8b23a; --low:#d98b7a;
+    --serif:Georgia,"Times New Roman",serif; --shadow:0 18px 50px -20px rgba(0,0,0,.7);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#10201d 0%,var(--bg) 55%);
+    color:var(--ink);font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    padding:clamp(1.25rem,4vw,4rem)}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto}
+  .eyebrow{color:var(--primary);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;margin:0 0 .6rem}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.1rem,1.2rem+3.8vw,3.6rem);line-height:1.04;letter-spacing:-.02em;margin:0 0 1rem}
+  .intro{color:#c7d3ce;max-width:64ch;margin:0 0 3rem}
+  h2.sec{font-family:var(--serif);font-weight:400;font-size:1.05rem;color:var(--mut);letter-spacing:.02em;
+    margin:2.4rem 0 1rem;padding-bottom:.5rem;border-bottom:1px solid var(--line);text-transform:uppercase;font-size:.78rem;letter-spacing:.16em}
+  .grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);
+    display:flex;flex-direction:column;transition:.16s}
+  .card:hover{transform:translateY(-4px);border-color:#2c3a36}
+  .card.feat{border-color:var(--primary);box-shadow:0 0 0 1px var(--primary),var(--shadow)}
+  .thumb{aspect-ratio:16/10;overflow:hidden;background:#0d1211;border-bottom:1px solid var(--line);position:relative}
+  .thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .tag{position:absolute;top:.6rem;left:.6rem;font-size:.62rem;letter-spacing:.12em;font-weight:700;padding:.26rem .5rem;border-radius:5px;background:var(--primary);color:#04110e}
+  .b{padding:1rem 1.15rem 1.15rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+  .b h3{font-family:var(--serif);font-weight:400;font-size:1.3rem;margin:0}
+  .b p{margin:0;color:#b7c5c0;font-size:.88rem;flex:1}
+  .meta{color:var(--mut);font-size:.78rem;letter-spacing:.02em;margin-top:.3rem}
+  .go{color:var(--primary);font-size:.85rem;font-weight:600;margin-top:.4rem}
+  footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--mut);font-size:.82rem;max-width:70ch}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">mavitrine · coulisses</p>
+    <h1>Toutes les versions</h1>
+    <p class="intro">L'index du « making-of » : le site en ligne, les séries d'itérations générées et
+      notées par une boucle agentique, et les expériences du laboratoire. Chaque version est un site
+      complet et autonome.</p>
+
+    <h2 class="sec">En ligne</h2>
+    <div class="grid">
+      <a class="card feat" href="../">
+        <div class="thumb"><img src="../r2-live-thumb.png" alt="Site en ligne"><span class="tag">EN LIGNE</span></div>
+        <div class="b"><h3>Le site</h3><p>La version publiée : le pic de la série v1 (tour 2).</p>
+          <span class="meta">esthétique 7,6/10 · Lighthouse 100/100/100/100</span><span class="go">Ouvrir →</span></div>
+      </a>
+    </div>
+
+    <h2 class="sec">Séries de versions</h2>
+    <div class="grid">
+      <a class="card" href="../v0/">
+        <div class="thumb"><img src="../v0/shot-desktop.png" alt="Original"></div>
+        <div class="b"><h3>v0 · Original</h3><p>La toute première version, conservée telle quelle.</p>
+          <span class="meta">esthétique 7,2/10 · point de départ</span><span class="go">Ouvrir →</span></div>
+      </a>
+      <a class="card" href="../v1/">
+        <div class="thumb"><img src="../v1/r2/shot-desktop.png" alt="Série v1"></div>
+        <div class="b"><h3>v1 · Trois itérations</h3><p>r1 · r2 (en ligne) · r3 — galerie notée + expliquée.</p>
+          <span class="meta">3 versions · pic 7,6/10</span><span class="go">Voir la galerie →</span></div>
+      </a>
+      <a class="card" href="../v2/">
+        <div class="thumb"><img src="../v2/r1/shot-desktop.png" alt="Série v2"></div>
+        <div class="b"><h3>v2 · La boucle corrigée</h3><p>Deux révisions ; aucune n'a battu l'existant.</p>
+          <span class="meta">3 versions · a gardé le 7,5/10</span><span class="go">Voir la galerie →</span></div>
+      </a>
+    </div>
+
+    <h2 class="sec">Laboratoire</h2>
+    <div class="grid">
+      <a class="card" href="illus/">
+        <div class="thumb"><img src="illus/fish.png" alt="Illustrations SVG"></div>
+        <div class="b"><h3>Illustrations SVG réalistes</h3><p>Cinq scènes redessinées vers le réalisme, teintées par la marque.</p>
+          <span class="meta">5 illustrations · réalisme plafonné à 6,0/10</span><span class="go">Voir la galerie →</span></div>
+      </a>
+    </div>
+
+    <footer>
+      Séries et illustrations sont générées puis notées automatiquement par un panel de juges
+      indépendants (médiane) ; les notes mesurent l'esthétique ou le réalisme, pas l'exactitude du
+      contenu. Pages en <code>noindex</code> — vitrine interne.
+    </footer>
+  </div>
+</body>
+</html>
