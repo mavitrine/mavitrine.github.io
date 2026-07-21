@@ -323,11 +323,6 @@
 
     document.getElementById("viewport-url").textContent = "mavitrine.ca/" + cat.slug;
     document.getElementById("vibe-note").textContent = state.vibe.note;
-
-    var comboCat = document.getElementById("combo-cat");
-    var comboVibe = document.getElementById("combo-vibe");
-    if (comboCat) comboCat.textContent = cat.label;
-    if (comboVibe) comboVibe.textContent = state.vibe.label;
   }
 
   /* Petit fondu au changement — un seul moment d'animation, pas dix */

@@ -20,7 +20,6 @@
   --accent:      #B87A2B;
   --accent-ink:  #8A5A1C;
   --shadow:      0 1px 2px rgba(15, 30, 27, .06), 0 8px 24px -12px rgba(15, 30, 27, .18);
-  --shadow-lg:   0 2px 6px rgba(15, 30, 27, .09), 0 24px 52px -22px rgba(15, 30, 27, .34);
 
   /* Typographie — toutes résidentes sur le système, aucune requête réseau */
   --font-display: Georgia, "Iowan Old Style", "Times New Roman", Times, serif;
@@ -33,7 +32,7 @@
   --t-md:   1.1875rem;
   --t-lg:   clamp(1.375rem, 1.15rem + 1vw, 1.875rem);
   --t-xl:   clamp(1.875rem, 1.4rem + 2.2vw, 2.75rem);
-  --t-2xl:  clamp(2.75rem, 1.5rem + 5.6vw, 5.25rem);
+  --t-2xl:  clamp(2.5rem, 1.6rem + 4vw, 4.25rem);
 
   /* Rythme */
   --gutter:  clamp(1.25rem, 4vw, 3rem);
@@ -58,7 +57,6 @@
     --accent:     #E0A455;
     --accent-ink: #E0A455;
     --shadow:     0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px -14px rgba(0, 0, 0, .7);
-    --shadow-lg:  0 2px 6px rgba(0, 0, 0, .5), 0 28px 62px -22px rgba(0, 0, 0, .85);
   }
 }
 
@@ -75,7 +73,6 @@
   --accent:     #E0A455;
   --accent-ink: #E0A455;
   --shadow:     0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px -14px rgba(0, 0, 0, .7);
-  --shadow-lg:  0 2px 6px rgba(0, 0, 0, .5), 0 28px 62px -22px rgba(0, 0, 0, .85);
 }
 
 :root[data-theme="light"] {
@@ -90,7 +87,6 @@
   --accent:     #B87A2B;
   --accent-ink: #8A5A1C;
   --shadow:     0 1px 2px rgba(15, 30, 27, .06), 0 8px 24px -12px rgba(15, 30, 27, .18);
-  --shadow-lg:  0 2px 6px rgba(15, 30, 27, .09), 0 24px 52px -22px rgba(15, 30, 27, .34);
 }
 
 /* ------------------------------------------------------------- 2. Socle */
@@ -116,7 +112,7 @@ a  { color: inherit; }
 code { font-family: var(--font-mono); font-size: .92em; }
 
 :focus-visible {
-  outline: 2px solid var(--primary);
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -158,7 +154,7 @@ code { font-family: var(--font-mono); font-size: .92em; }
 .marker {
   width: .5rem;
   height: .5rem;
-  background: var(--primary);
+  background: var(--accent);
   flex: none;
 }
 
@@ -194,7 +190,7 @@ code { font-family: var(--font-mono); font-size: .92em; }
   flex: none;
   border: 2px solid var(--primary);
   border-top-width: 6px;
-  border-top-color: var(--primary);
+  border-top-color: var(--accent);
 }
 .brand-text strong { font-weight: 700; }
 
@@ -206,7 +202,7 @@ code { font-family: var(--font-mono); font-size: .92em; }
   border-bottom: 1px solid transparent;
   transition: color .2s var(--ease), border-color .2s var(--ease);
 }
-.site-nav a:hover { color: var(--ink); border-bottom-color: var(--primary); }
+.site-nav a:hover { color: var(--ink); border-bottom-color: var(--accent); }
 
 .theme-toggle {
   display: inline-flex;
@@ -229,7 +225,7 @@ code { font-family: var(--font-mono); font-size: .92em; }
   width: .625rem;
   height: .625rem;
   border-radius: 50%;
-  background: linear-gradient(to right, var(--ink) 0 50%, var(--primary) 50% 100%);
+  background: linear-gradient(to right, var(--ink) 0 50%, var(--accent) 50% 100%);
 }
 
 @media (min-width: 62rem) {
@@ -239,43 +235,25 @@ code { font-family: var(--font-mono); font-size: .92em; }
 /* -------------------------------------------------------------- 5. Hero */
 
 .hero {
-  position: relative;
   padding-block: clamp(3.5rem, 9vw, 7rem) var(--stack);
   border-bottom: var(--rule);
-  /* Lueur de vitrine : la lumière vient du côté droit, là où se pose l'aperçu.
-     Elle creuse le fond pour que le pli ne lise plus comme un aplat. */
-  background:
-    radial-gradient(72% 62% at 84% 6%,
-      color-mix(in srgb, var(--primary) 16%, transparent) 0%,
-      transparent 62%);
 }
-
-/* Le pli se compose en deux temps : le propos à gauche, la preuve à droite. */
-.hero-grid { display: grid; gap: clamp(2.75rem, 6vw, 4rem); }
-@media (min-width: 60rem) {
-  .hero-grid {
-    grid-template-columns: minmax(0, 1.02fr) minmax(0, .98fr);
-    align-items: center;
-  }
-}
-
 .hero-title {
   font-family: var(--font-display);
   font-size: var(--t-2xl);
   font-weight: 400;
-  letter-spacing: -.028em;
-  line-height: 1.02;
-  max-width: 15ch;
+  letter-spacing: -.02em;
+  max-width: 17ch;
 }
 .hero-title em {
   display: block;
   font-style: italic;
   color: var(--primary);
-  margin-top: .12em;
+  margin-top: .2em;
 }
 .lede {
   margin-top: 1.75rem;
-  max-width: 52ch;
+  max-width: 58ch;
   font-size: var(--t-md);
   color: var(--muted);
 }
@@ -285,154 +263,6 @@ code { font-family: var(--font-mono); font-size: .92em; }
   flex-wrap: wrap;
   gap: .875rem;
   margin-top: 2.25rem;
-}
-
-/* ------------------------------------------------- 5b. Visuel signature
-
-   Une pile de fenêtres : le même commerce, décliné. C'est la promesse
-   (« une à trois versions ») rendue visible dès le pli. Décoratif —
-   aria-hidden — car l'aperçu réel et pilotable vit dans le compositeur.
-   ------------------------------------------------------------------------- */
-
-.hero-visual { position: relative; }
-.hero-visual::before {
-  content: "";
-  position: absolute;
-  inset: -8% -6% -12% -2%;
-  z-index: 0;
-  background: radial-gradient(60% 55% at 62% 42%,
-    color-mix(in srgb, var(--primary) 22%, transparent), transparent 70%);
-  filter: blur(6px);
-  pointer-events: none;
-}
-
-.hv-stack {
-  position: relative;
-  display: grid;
-  padding: 2.75rem 2.75rem 0 0;
-}
-.hv-stack > * {
-  grid-area: 1 / 1;
-  border-radius: 10px;
-  box-shadow: 0 26px 55px -26px rgba(0,0,0,.62), 0 3px 10px rgba(0,0,0,.16);
-}
-
-/* Les versions « alternatives » qui débordent derrière la principale */
-.hv-card-back {
-  border: 1px solid var(--border);
-  background: var(--surface-2);
-}
-.hv-card-back::before {
-  content: "";
-  display: block;
-  height: 1.4rem;
-  border-bottom: 1px solid var(--border);
-  background:
-    radial-gradient(2px 2px at .95rem .7rem, var(--border) 45%, transparent 50%),
-    radial-gradient(2px 2px at 1.55rem .7rem, var(--border) 45%, transparent 50%),
-    radial-gradient(2px 2px at 2.15rem .7rem, var(--border) 45%, transparent 50%);
-  border-radius: 10px 10px 0 0;
-}
-.hv-card-back-1 { transform: translate(1.25rem, -1.25rem) scale(.985); z-index: 2; }
-.hv-card-back-2 { transform: translate(2.4rem, -2.4rem)  scale(.97);  z-index: 1; }
-
-/* La version mise en avant : sa propre lumière, un vrai site, pas un thème
-   de la page — elle éclate sur le fond sombre (figure/fond assumé). */
-.hv-card-front {
-  --hv-bg: #FFFFFF; --hv-ink: #16231F; --hv-muted: #5B6B66;
-  --hv-accent: #14514A; --hv-border: #E4EAE6;
-  position: relative;
-  z-index: 3;
-  overflow: hidden;
-  background: var(--hv-bg);
-  color: var(--hv-ink);
-  border: 1px solid var(--hv-border);
-  transition: transform .32s var(--ease);
-}
-.hv-chrome {
-  display: flex;
-  align-items: center;
-  gap: .35rem;
-  padding: .6rem .85rem;
-  background: #F1F5F3;
-  border-bottom: 1px solid var(--hv-border);
-}
-.hv-dot { width: .5rem; height: .5rem; border-radius: 50%; background: #CBD6D1; }
-.hv-url {
-  margin-left: .6rem;
-  font-family: var(--font-mono);
-  font-size: .68rem;
-  color: var(--hv-muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.hv-body { padding: 1.25rem 1.35rem 1.5rem; }
-
-/* Traitement duotone : une lumière, deux teintes — une photo, pas un fil de fer */
-.hv-shot {
-  position: relative;
-  isolation: isolate;
-  height: 6.25rem;
-  border-radius: 3px;
-  margin-bottom: 1.15rem;
-  background:
-    radial-gradient(135% 100% at 16% 8%, rgba(255,255,255,.5), transparent 52%),
-    radial-gradient(90% 120% at 90% 108%, color-mix(in oklab, var(--hv-accent) 60%, #000) 0%, transparent 60%),
-    linear-gradient(135deg,
-      color-mix(in oklab, var(--hv-accent) 62%, #7FBFB4) 0%,
-      color-mix(in oklab, var(--hv-accent) 82%, #000) 58%,
-      #0E3B35 100%);
-}
-.hv-eyebrow {
-  font-size: .62rem;
-  font-weight: 700;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: var(--hv-accent);
-  margin-bottom: .5rem;
-}
-.hv-title {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  line-height: 1.18;
-  letter-spacing: -.01em;
-  margin-bottom: 1rem;
-  text-wrap: balance;
-}
-.hv-rows { display: flex; flex-direction: column; gap: .55rem; margin-bottom: 1.1rem; }
-.hv-row {
-  display: flex;
-  align-items: baseline;
-  gap: .75rem;
-  font-size: .78rem;
-  padding-bottom: .55rem;
-  border-bottom: 1px solid var(--hv-border);
-}
-.hv-row span:first-child { font-weight: 600; }
-.hv-price {
-  margin-left: auto;
-  color: var(--hv-accent);
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-}
-.hv-btn {
-  display: inline-block;
-  padding: .55rem 1.05rem;
-  border-radius: 3px;
-  background: var(--hv-accent);
-  color: #fff;
-  font-size: .74rem;
-  font-weight: 700;
-  letter-spacing: .04em;
-}
-
-.hv-stack:hover .hv-card-front { transform: translateY(-5px); }
-
-@media (max-width: 26rem) {
-  .hv-stack { padding-right: 1.75rem; }
-  .hv-card-back-1 { transform: translate(.85rem, -.85rem) scale(.99); }
-  .hv-card-back-2 { transform: translate(1.6rem, -1.6rem) scale(.98); }
 }
 .btn {
   display: inline-flex;
@@ -451,10 +281,9 @@ code { font-family: var(--font-mono); font-size: .92em; }
 .btn-primary { background: var(--primary); color: var(--on-primary); }
 .btn-primary:hover { transform: translateY(-1px); background: color-mix(in srgb, var(--primary) 88%, var(--ink)); }
 .btn-ghost { border-color: var(--border); color: var(--ink); }
-.btn-ghost:hover { border-color: var(--primary); transform: translateY(-1px); }
+.btn-ghost:hover { border-color: var(--accent); transform: translateY(-1px); }
 
-/* Les trois chiffres qui résument l'offre — une barre posée, avec du relief :
-   filet de laiton en tête, élévation, dégradé dans chaque cellule. */
+/* Les trois chiffres qui résument l'offre */
 .facts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
@@ -462,16 +291,12 @@ code { font-family: var(--font-mono); font-size: .92em; }
   margin: clamp(3rem, 6vw, 4.5rem) 0 0;
   background: var(--border);
   border: var(--rule);
-  border-top: 2px solid var(--primary);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: var(--shadow);
 }
 .fact {
-  padding: 1.5rem 1.5rem 1.625rem;
-  background: linear-gradient(180deg,
-    var(--surface) 0%,
-    color-mix(in srgb, var(--surface) 90%, var(--primary)) 100%);
+  background: var(--surface);
+  padding: 1.375rem 1.5rem;
 }
 .fact dt {
   font-size: var(--t-xs);
@@ -487,11 +312,7 @@ code { font-family: var(--font-mono); font-size: .92em; }
   font-variant-numeric: tabular-nums;
   color: var(--primary);
 }
-.fact-unit { font-size: 1.25rem; color: var(--primary); margin-left: .15em; }
-
-/* Le seul rôle du laiton : la ponctuation « zéro à payer » — le point de vue. */
-.fact-free dd,
-.fact-free .fact-unit { color: var(--accent); }
+.fact-unit { font-size: 1.25rem; color: var(--accent-ink); margin-left: .15em; }
 
 /* ---------------------------------------------------------- 6. Sections */
 
@@ -524,10 +345,7 @@ code { font-family: var(--font-mono); font-size: .92em; }
   margin-top: clamp(2.5rem, 5vw, 3.5rem);
 }
 @media (min-width: 60rem) {
-  .compositor { grid-template-columns: 15.5rem minmax(0, 1fr); align-items: start; }
-  /* Le pupitre suit le défilement pendant que l'aperçu (bien plus long) défile :
-     le bas de la colonne n'est plus un vide abandonné, c'est un repère fixe. */
-  .controls { position: sticky; top: 5.25rem; align-self: start; }
+  .compositor { grid-template-columns: 17rem minmax(0, 1fr); align-items: start; }
 }
 
 .controls { display: flex; flex-direction: column; gap: 1.75rem; min-width: 0; }
@@ -552,89 +370,24 @@ code { font-family: var(--font-mono); font-size: .92em; }
   font-size: var(--t-sm);
   padding: .45rem .8rem;
   cursor: pointer;
-  transition: color .18s var(--ease), border-color .18s var(--ease),
-    background-color .18s var(--ease), transform .18s var(--ease), box-shadow .18s var(--ease);
+  transition: color .18s var(--ease), border-color .18s var(--ease), background-color .18s var(--ease);
 }
-.chip:hover {
-  color: var(--ink);
-  border-color: var(--muted);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
-}
+.chip:hover { color: var(--ink); border-color: var(--muted); }
 .chip[aria-checked="true"] {
   background: var(--primary);
   border-color: var(--primary);
   color: var(--on-primary);
-  box-shadow: 0 8px 16px -8px color-mix(in srgb, var(--primary) 70%, transparent);
 }
-.chip[aria-checked="true"]:hover { transform: translateY(-2px); }
 .control-note {
   font-size: var(--t-sm);
   color: var(--muted);
-  border-left: 2px solid var(--primary);
+  border-left: 2px solid var(--accent);
   padding-left: .875rem;
   min-height: 3.5rem;
 }
 
-/* Lecture en direct de la combinaison choisie : ancre le bas de la colonne
-   et rend explicite le lien « deux choix → un site recomposé ». */
-.live-combo {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  padding-top: 1.5rem;
-  border-top: var(--rule);
-}
-.live-combo-label {
-  font-size: var(--t-xs);
-  font-weight: 600;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.live-combo-value {
-  font-family: var(--font-display);
-  font-size: var(--t-md);
-  line-height: 1.25;
-  letter-spacing: -.01em;
-  color: var(--ink);
-}
-.live-combo-x { color: var(--primary); margin-inline: .1em; font-style: italic; }
-.live-combo-cue {
-  display: inline-flex;
-  align-items: center;
-  gap: .45rem;
-  margin-top: .1rem;
-  font-size: var(--t-xs);
-  font-weight: 600;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--primary);
-}
-.live-combo-cue::before {
-  content: "→";
-  font-size: 1.05em;
-  transform: translateY(-1px);
-}
-@media (max-width: 60rem) {
-  .live-combo-cue::before { content: "↓"; }
-}
-
 /* La fenêtre : on regarde à travers une vitre */
 .viewport { margin: 0; }
-/* Le cadre porte l'élévation : l'aperçu est un objet posé sur la page, et il
-   réagit — il se soulève — quand on manipule les jetons à gauche. */
-.viewport-frame {
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: box-shadow .32s var(--ease), transform .32s var(--ease);
-}
-.viewport-frame:hover,
-.compositor:focus-within .viewport-frame {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-}
 .viewport-chrome {
   display: flex;
   align-items: center;
@@ -677,10 +430,10 @@ code { font-family: var(--font-mono); font-size: .92em; }
   color: var(--p-ink);
   font-family: var(--p-body);
   line-height: var(--p-lh);
-  transition: opacity .28s var(--ease), transform .28s var(--ease);
+  transition: opacity .28s var(--ease);
   container-type: inline-size;
 }
-.preview.is-swapping { opacity: 0; transform: translateY(10px); }
+.preview.is-swapping { opacity: 0; }
 
 .preview[data-vibe="moderne"] {
   --p-bg: #FFFFFF; --p-surface: #F5F8FA; --p-ink: #1F2937; --p-muted: #55677A;
@@ -786,21 +539,15 @@ code { font-family: var(--font-mono); font-size: .92em; }
   letter-spacing: var(--p-caps);
 }
 
-/* Traitement duotone : une lumière rasante + deux teintes de l'ambiance.
-   Ça lit comme une photographie masquée, pas comme un fil de fer gris. */
 .pv-shot {
-  position: relative;
-  isolation: isolate;
   height: 7rem;
   margin-top: 1.1rem;
   border-radius: var(--p-radius);
   background:
-    radial-gradient(120% 130% at 14% 6%, rgba(255,255,255,.5), transparent 46%),
-    radial-gradient(90% 120% at 92% 106%, color-mix(in oklab, var(--p-accent) 72%, #000) 0%, transparent 58%),
     linear-gradient(130deg,
-      color-mix(in oklab, var(--p-accent) 58%, var(--p-bg)) 0%,
-      color-mix(in oklab, var(--p-accent) 30%, var(--p-ink)) 55%,
-      color-mix(in oklab, var(--p-ink) 62%, var(--p-bg)) 100%);
+      color-mix(in oklab, var(--p-accent) 34%, var(--p-bg)) 0%,
+      color-mix(in oklab, var(--p-accent) 12%, var(--p-bg)) 48%,
+      color-mix(in oklab, var(--p-ink) 16%, var(--p-bg)) 100%);
 }
 
 .pv-block { padding: var(--p-pad); border-top: 1px solid var(--p-border); }
@@ -830,63 +577,19 @@ code { font-family: var(--font-mono); font-size: .92em; }
 .pv-hours-row span:last-child { color: var(--p-muted); font-variant-numeric: tabular-nums; }
 
 .pv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; }
-/* Trois cadrages duotone distincts : une galerie, pas trois cases grises */
 .pv-tile {
-  position: relative;
-  isolation: isolate;
   aspect-ratio: 4 / 3;
   border-radius: var(--p-radius);
-  background:
-    radial-gradient(120% 120% at 20% 10%, rgba(255,255,255,.42), transparent 48%),
-    linear-gradient(150deg,
-      color-mix(in oklab, var(--p-accent) 52%, var(--p-bg)) 0%,
-      color-mix(in oklab, var(--p-ink) 40%, var(--p-bg)) 100%);
+  background: linear-gradient(150deg,
+    color-mix(in oklab, var(--p-accent) 28%, var(--p-bg)),
+    color-mix(in oklab, var(--p-ink) 14%, var(--p-bg)));
 }
-.pv-tile:nth-child(2) { background:
-  radial-gradient(130% 120% at 82% 12%, rgba(255,255,255,.4), transparent 50%),
-  linear-gradient(150deg,
-    color-mix(in oklab, var(--p-ink) 46%, var(--p-bg)) 0%,
-    color-mix(in oklab, var(--p-accent) 40%, var(--p-bg)) 100%); }
-.pv-tile:nth-child(3) { background:
-  radial-gradient(120% 130% at 30% 88%, rgba(255,255,255,.36), transparent 46%),
-  linear-gradient(210deg,
-    color-mix(in oklab, var(--p-accent) 62%, #000) 0%,
-    color-mix(in oklab, var(--p-accent) 24%, var(--p-bg)) 100%); }
-
-/* ---- Trame sérigraphique : le geste signature ------------------------------
-   Une trame de points (halftone) posée sur chaque aplat duotone. Sur le fond
-   coloré, ça lit comme une photographie tramée d'imprimeur — une vitrine
-   sérigraphiée, pas un flou générique. Le même traitement relie la carte du
-   pli, la bannière de l'aperçu et les tuiles de galerie en une seule série. */
-.hv-shot::after,
-.pv-shot::after,
-.pv-tile::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  z-index: 1;
-  background-image:
-    radial-gradient(rgba(6, 17, 15, .5) 32%, transparent 34%),
-    radial-gradient(rgba(255, 255, 255, .16) 32%, transparent 34%);
-  background-size: 4px 4px, 4px 4px;
-  background-position: 0 0, 2px 2px;
-  mix-blend-mode: soft-light;
-  opacity: .55;
-}
-/* Un liseré intérieur : le tirage a un bord, il ne se dissout pas dans la page */
-.hv-shot::before,
-.pv-shot::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  z-index: 2;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .1),
-              inset 0 -18px 30px -18px rgba(6, 17, 15, .55);
-}
+.pv-tile:nth-child(2) { background: linear-gradient(150deg,
+  color-mix(in oklab, var(--p-ink) 20%, var(--p-bg)),
+  color-mix(in oklab, var(--p-accent) 18%, var(--p-bg))); }
+.pv-tile:nth-child(3) { background: linear-gradient(200deg,
+  color-mix(in oklab, var(--p-accent) 40%, var(--p-bg)),
+  color-mix(in oklab, var(--p-bg) 90%, var(--p-ink))); }
 
 .pv-quote {
   font-size: .8rem;
@@ -960,26 +663,12 @@ code { font-family: var(--font-mono); font-size: .92em; }
   font-family: var(--font-display);
   font-size: 1.5rem;
   line-height: 1;
-  color: var(--primary);
+  color: var(--accent-ink);
   font-variant-numeric: tabular-nums;
   margin-bottom: 1rem;
 }
 .step h3 { font-size: var(--t-md); font-weight: 650; margin-bottom: .625rem; }
 .step p { font-size: var(--t-sm); color: var(--muted); }
-
-/* Discipline de l'accent : le laiton ne sert QUE le signal « zéro à payer ».
-   L'étape 4 EST ce moment (« vous n'avez rien payé, rien signé ») — elle porte
-   donc le même laiton que le « 0 $ » de la barre de chiffres. Deux emplois,
-   un seul sens : l'accent devient un système, plus une fausse note isolée. */
-.step:last-child { position: relative; }
-.step:last-child::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--accent);
-}
-.step:last-child .step-num { color: var(--accent); }
 
 /* ---------------------------------------------------------- 10. Forfaits */
 
@@ -1051,7 +740,7 @@ code { font-family: var(--font-mono); font-size: .92em; }
   top: .62em;
   width: .375rem;
   height: .375rem;
-  background: var(--primary);
+  background: var(--accent);
 }
 .tier-list strong { color: var(--ink); }
 
@@ -1083,7 +772,7 @@ code { font-family: var(--font-mono); font-size: .92em; }
   font-weight: 400;
   margin-bottom: .75rem;
   padding-bottom: .75rem;
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 2px solid var(--accent);
   display: inline-block;
 }
 .pledge p { font-size: var(--t-sm); color: var(--muted); }
@@ -1110,8 +799,8 @@ code { font-family: var(--font-mono); font-size: .92em; }
   width: .625rem;
   height: .625rem;
   flex: none;
-  border-right: 2px solid var(--primary);
-  border-bottom: 2px solid var(--primary);
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
   transform: rotate(45deg) translate(-2px, -2px);
   transition: transform .2s var(--ease);
 }
