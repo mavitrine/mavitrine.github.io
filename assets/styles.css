@@ -242,6 +242,12 @@ code { font-family: var(--font-mono); font-size: .92em; }
   position: relative;
   padding-block: clamp(3.5rem, 9vw, 7rem) var(--stack);
   border-bottom: var(--rule);
+  /* Le décor du pli déborde de son cadre — la lueur de l'aperçu mord 6 % à
+     droite, soit plus que la gouttière de 20 px sur téléphone : d'où la barre
+     de défilement horizontale. La section fait toute la largeur, donc la
+     rogner ici revient à la rogner au bord de l'écran. `clip` et non `hidden`,
+     qui forcerait `overflow-y: auto` et créerait un conteneur de défilement. */
+  overflow-x: clip;
   /* Lueur de vitrine : la lumière vient du côté droit, là où se pose l'aperçu.
      Elle creuse le fond pour que le pli ne lise plus comme un aplat. */
   background:
