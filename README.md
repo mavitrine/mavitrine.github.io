@@ -9,4 +9,4 @@ the next deploy.
 
 Edit the site there, open a PR there, then run the deploy script.
 
-Published from source commit `dcb415c`.
+Published from source commit `5ec3e08`.
