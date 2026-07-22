@@ -489,9 +489,14 @@ code { font-family: var(--font-mono); font-size: .92em; }
 }
 .fact-unit { font-size: 1.25rem; color: var(--primary); margin-left: .15em; }
 
-/* Le seul rôle du laiton : la ponctuation « zéro à payer » — le point de vue. */
+/* Le seul rôle du laiton : la ponctuation « zéro à payer » — le point de vue.
+   C'est du laiton *en texte*, donc --accent-ink et non --accent : sur le clair,
+   #B87A2B ne donne que 3,05:1 sur le dégradé de la cellule, ce qui passe pour
+   le « 0 » (40 px, grand texte, 3:1) mais échoue pour le « $ » (20 px, texte
+   normal, 4,5:1 requis). --accent-ink #8A5A1C donne 5,02:1 pour les deux. Sur
+   le sombre les deux jetons sont identiques : aucun changement visuel. */
 .fact-free dd,
-.fact-free .fact-unit { color: var(--accent); }
+.fact-free .fact-unit { color: var(--accent-ink); }
 
 /* ---------------------------------------------------------- 6. Sections */
 
