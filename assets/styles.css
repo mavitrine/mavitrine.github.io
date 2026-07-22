@@ -1055,6 +1055,36 @@ code { font-family: var(--font-mono); font-size: .92em; }
 }
 .tier-list strong { color: var(--ink); }
 
+/* Un seul forfait : la carte ne doit pas s'étirer sur trois colonnes. */
+.tiers.tiers-single {
+  grid-template-columns: 1fr;
+  max-width: 27rem;
+  margin-inline: auto;
+}
+
+/* Le renouvellement n'est pas un forfait à choisir — il arrive plus tard et
+   seulement si le client le veut. Il est donc subordonné à la carte, pas à
+   côté d'elle. */
+.renew {
+  max-width: 46rem;
+  margin: clamp(2rem, 4vw, 3rem) auto 0;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  background: var(--surface);
+  border: var(--rule);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+.renew h3 {
+  font-family: var(--font-display);
+  font-size: var(--t-md);
+  font-weight: 400;
+}
+.renew p { font-size: var(--t-sm); color: var(--muted); }
+.renew strong { color: var(--ink); font-weight: 600; }
+
 .fineprint {
   margin-top: 2rem;
   font-size: var(--t-xs);
