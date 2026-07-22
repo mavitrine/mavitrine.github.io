@@ -1,0 +1,45 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#0b0f0e"><div style="width:840px;height:630px">
+  <svg viewBox="0 0 320 240" width="840" height="630" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="m2bg" cx="32%" cy="12%" r="120%">
+        <stop offset="0" stop-color="#1c4c44"/>
+        <stop offset="55%" stop-color="#103b34"/>
+        <stop offset="100%" stop-color="#07211d"/>
+      </radialGradient>
+      <linearGradient id="m2pipe" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#5AD2C4"/>
+        <stop offset="35%" stop-color="#40897a"/>
+        <stop offset="100%" stop-color="#1c4c44"/>
+      </linearGradient>
+      <linearGradient id="m2jaw" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#40897a"/>
+        <stop offset="100%" stop-color="#173e37"/>
+      </linearGradient>
+      <radialGradient id="m2vig" cx="46%" cy="42%" r="76%">
+        <stop offset="52%" stop-color="#000" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#04140f" stop-opacity="0.55"/>
+      </radialGradient>
+    </defs>
+    <rect width="320" height="240" fill="url(#m2bg)"/>
+
+    <!-- an elbow joint, mid-tighten: two runs and a collar -->
+    <path d="M22 84 H150 Q176 84 176 110 V222" fill="none" stroke="url(#m2pipe)" stroke-width="30" stroke-linejoin="round"/>
+    <path d="M28 72 H144" stroke="#cfeee6" stroke-width="3.2" stroke-linecap="round" opacity="0.28"/>
+    <path d="M164 122 V214" stroke="#cfeee6" stroke-width="3.2" stroke-linecap="round" opacity="0.22"/>
+    <rect x="92" y="64" width="22" height="40" rx="4" fill="url(#m2jaw)"/>
+    <rect x="160" y="150" width="34" height="22" rx="4" fill="url(#m2jaw)"/>
+
+    <!-- the wrench on the collar — the tool doing the work, one amber grip -->
+    <g transform="rotate(-28 177 161)">
+      <rect x="192" y="152" width="30" height="18" rx="4" fill="#2a635a"/>
+      <rect x="216" y="152" width="52" height="18" rx="6" fill="#2a635a"/>
+      <rect x="262" y="152" width="40" height="18" rx="9" fill="#e8b23a"/>
+      <rect x="268" y="154" width="28" height="2" rx="1" fill="#cfeee6" opacity="0.35"/>
+      <path d="M196 138 H156 L142 152 V170 L156 184 H196 Z" fill="#2a635a"/>
+      <circle cx="169" cy="161" r="16" fill="url(#m2bg)"/>
+      <circle cx="169" cy="161" r="16" fill="none" stroke="#66a89a" stroke-opacity="0.4" stroke-width="1.4"/>
+    </g>
+
+    <rect width="320" height="240" fill="url(#m2vig)"/>
+  </svg>
+</div>

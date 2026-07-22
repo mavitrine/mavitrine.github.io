@@ -1,0 +1,52 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#0b0f0e"><div style="width:840px;height:630px">
+  <svg viewBox="0 0 320 240" width="840" height="630" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="c2bg" cx="32%" cy="12%" r="120%">
+        <stop offset="0" stop-color="#1c4c44"/>
+        <stop offset="55%" stop-color="#103b34"/>
+        <stop offset="100%" stop-color="#07211d"/>
+      </radialGradient>
+      <linearGradient id="c2cloth" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#40897a"/>
+        <stop offset="100%" stop-color="#22574e"/>
+      </linearGradient>
+      <linearGradient id="c2steel" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#5AD2C4"/>
+        <stop offset="45%" stop-color="#40897a"/>
+        <stop offset="100%" stop-color="#22574e"/>
+      </linearGradient>
+      <radialGradient id="c2vig" cx="46%" cy="44%" r="76%">
+        <stop offset="52%" stop-color="#000" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#04140f" stop-opacity="0.55"/>
+      </radialGradient>
+    </defs>
+    <rect width="320" height="240" fill="url(#c2bg)"/>
+    <line x1="0" y1="204" x2="320" y2="204" stroke="#2f6459" stroke-opacity="0.32" stroke-width="1"/>
+
+    <!-- a folded cloth: the one surface the instrument rests on -->
+    <ellipse cx="160" cy="202" rx="98" ry="10" fill="#04140f" opacity="0.45"/>
+    <rect x="66" y="182" width="188" height="18" rx="5" fill="#1c4c44"/>
+    <rect x="72" y="166" width="176" height="18" rx="5" fill="url(#c2cloth)"/>
+    <rect x="78" y="168" width="164" height="1.8" rx="1" fill="#cfeee6" opacity="0.22"/>
+    <path d="M72 176 H248" fill="none" stroke="#173e37" stroke-width="1.2" opacity="0.7"/>
+
+    <!-- the stethoscope: two ear tubes into a Y, one tube down to the chestpiece -->
+    <path d="M98 46 Q84 92 128 112" fill="none" stroke="#2a635a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M172 46 Q186 92 142 112" fill="none" stroke="#2a635a" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="98" cy="44" rx="7" ry="5" fill="#40897a" transform="rotate(-14 98 44)"/>
+    <ellipse cx="172" cy="44" rx="7" ry="5" fill="#40897a" transform="rotate(14 172 44)"/>
+    <path d="M102 56 Q92 90 122 106" fill="none" stroke="#cfeee6" stroke-width="1.8" stroke-linecap="round" opacity="0.28"/>
+    <rect x="124" y="104" width="22" height="16" rx="5" fill="#22574e"/>
+    <path d="M135 118 C133 150 148 172 186 176" fill="none" stroke="#2a635a" stroke-width="9" stroke-linecap="round"/>
+    <path d="M131 124 C130 150 144 168 176 172" fill="none" stroke="#cfeee6" stroke-width="1.8" stroke-linecap="round" opacity="0.22"/>
+
+    <!-- the chestpiece, lying flat on the cloth; its diaphragm is the one warm note -->
+    <ellipse cx="206" cy="178" rx="30" ry="15" fill="#173e37"/>
+    <ellipse cx="206" cy="175" rx="30" ry="15" fill="url(#c2steel)"/>
+    <ellipse cx="206" cy="175" rx="30" ry="15" fill="none" stroke="#66a89a" stroke-opacity="0.4" stroke-width="1.4"/>
+    <ellipse cx="206" cy="175" rx="19" ry="9" fill="#e8b23a"/>
+    <path d="M186 170 Q198 164 212 166" fill="none" stroke="#cfeee6" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+
+    <rect width="320" height="240" fill="url(#c2vig)"/>
+  </svg>
+</div>

@@ -1,0 +1,53 @@
+<!doctype html><meta charset=utf-8><body style="margin:0;background:#0b0f0e"><div style="width:1040px;height:440px">
+  <svg viewBox="0 0 520 220" width="1040" height="440" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="mbbg" cx="30%" cy="8%" r="120%">
+        <stop offset="0" stop-color="#1c4c44"/>
+        <stop offset="55%" stop-color="#103b34"/>
+        <stop offset="100%" stop-color="#07211d"/>
+      </radialGradient>
+      <linearGradient id="mbpipe" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#5AD2C4"/>
+        <stop offset="38%" stop-color="#40897a"/>
+        <stop offset="100%" stop-color="#1c4c44"/>
+      </linearGradient>
+      <linearGradient id="mbvalve" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#40897a"/>
+        <stop offset="55%" stop-color="#2a635a"/>
+        <stop offset="100%" stop-color="#173e37"/>
+      </linearGradient>
+      <linearGradient id="mbcollar" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#40897a"/>
+        <stop offset="100%" stop-color="#1c4c44"/>
+      </linearGradient>
+      <radialGradient id="mbvig" cx="50%" cy="44%" r="74%">
+        <stop offset="54%" stop-color="#000" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#04140f" stop-opacity="0.5"/>
+      </radialGradient>
+    </defs>
+    <rect width="520" height="220" fill="url(#mbbg)"/>
+    <path d="M0 186 H520" stroke="#2f6459" stroke-opacity="0.26" stroke-width="1"/>
+
+    <!-- one clean run of pipe, wall to wall -->
+    <path d="M0 176 H520" stroke="#04140f" stroke-opacity="0.35" stroke-width="26" stroke-linecap="butt"/>
+    <!-- a rect, not a stroked line: a horizontal path has a zero-height bounding
+         box, and an objectBoundingBox gradient collapses to nothing on it -->
+    <rect x="0" y="117" width="520" height="30" fill="url(#mbpipe)"/>
+    <path d="M0 121 H520" stroke="#cfeee6" stroke-width="3" opacity="0.24"/>
+
+    <!-- two collars, evenly placed: the run has joints, not decoration -->
+    <rect x="98" y="112" width="20" height="40" rx="3" fill="url(#mbcollar)"/>
+    <rect x="402" y="112" width="20" height="40" rx="3" fill="url(#mbcollar)"/>
+
+    <!-- the valve body, and above it the handwheel: the single warm note -->
+    <path d="M236 152 L228 112 h64 l-8 40 Z" fill="url(#mbvalve)"/>
+    <rect x="250" y="78" width="20" height="36" rx="5" fill="#22574e"/>
+    <rect x="253" y="82" width="6" height="28" rx="3" fill="#cfeee6" opacity="0.22"/>
+    <circle cx="260" cy="72" r="19" fill="none" stroke="#e8b23a" stroke-width="5"/>
+    <path d="M241 72 H279 M260 53 V91" stroke="#2a635a" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="260" cy="72" r="5.5" fill="#22574e"/>
+    <path d="M247 59 A19 19 0 0 1 261 53" fill="none" stroke="#e8b23a" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+
+    <rect width="520" height="220" fill="url(#mbvig)"/>
+  </svg>
+</div>

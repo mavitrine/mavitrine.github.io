@@ -797,8 +797,13 @@ code { font-family: var(--font-mono); font-size: .92em; }
   letter-spacing: var(--p-caps);
 }
 
+/* L'illustration maison remplit sa case et masque le dégradé qui reste dessous
+   comme repli. La trame et le liseré (::after / ::before, z-index 1 et 2) lui
+   passent par-dessus : même tirage sérigraphié que le pli. */
+.pv-illus { display: block; width: 100%; height: 100%; border-radius: inherit; }
+
 /* Traitement duotone : une lumière rasante + deux teintes de l'ambiance.
-   Ça lit comme une photographie masquée, pas comme un fil de fer gris. */
+   Le dégradé sert de repli quand la catégorie n'a pas encore son jeu dessiné. */
 .pv-shot {
   position: relative;
   isolation: isolate;

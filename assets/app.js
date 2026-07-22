@@ -223,6 +223,25 @@
 
   var state = { cat: CATEGORIES[0], vibe: VIBES[0] };
 
+  /* ------------------------------------------------ Illustrations maison
+
+     L'aperçu est polymorphe : chaque catégorie a son jeu d'illustrations
+     duotone (voir vision/illustration-style.md), servi par illustrations.js.
+     `fill` pose la case demandée dans le bloc ; si la catégorie ou la case
+     n'est pas dessinée, on ne touche à rien et le dégradé de la feuille de
+     style reste — c'est le repli prévu, pas un oubli. */
+
+  function illus(key) {
+    var lib = window.MV_ILLUS;
+    return lib ? lib.slot(state.cat.id, key) : null;
+  }
+
+  function fill(node, key) {
+    var svg = illus(key);
+    if (svg) node.innerHTML = svg;
+    return node;
+  }
+
   /* --------------------------------------------------- Rendu de l'aperçu */
 
   function renderSection(sec) {
@@ -252,7 +271,7 @@
 
     } else if (sec.type === "galerie") {
       var grid = el("div", "pv-grid");
-      for (var i = 0; i < 3; i++) grid.appendChild(el("div", "pv-tile"));
+      for (var i = 0; i < 3; i++) grid.appendChild(fill(el("div", "pv-tile"), "tile" + (i + 1)));
       block.appendChild(grid);
 
     } else if (sec.type === "temoignages") {
@@ -271,9 +290,11 @@
 
     } else if (sec.type === "equipe") {
       var team = el("div", "pv-team");
-      sec.items.forEach(function (p) {
+      sec.items.forEach(function (p, idx) {
         var person = el("div", "pv-person");
-        person.appendChild(el("div", "pv-avatar"));
+        var face = el("div", "pv-avatar");
+        if (window.MV_ILLUS) face.innerHTML = window.MV_ILLUS.avatar(idx);
+        person.appendChild(face);
         var col = el("div");
         col.appendChild(el("div", "pv-person-name", p.n));
         col.appendChild(el("div", "pv-person-role", p.r));
@@ -307,7 +328,7 @@
     hero.appendChild(el("div", "pv-h1", cat.titre));
     hero.appendChild(el("p", "pv-sub", cat.sous));
     hero.appendChild(el("span", "pv-btn", cat.cta));
-    hero.appendChild(el("div", "pv-shot"));
+    hero.appendChild(fill(el("div", "pv-shot"), "hero"));
     frag.appendChild(hero);
 
     cat.sections.forEach(function (s) { frag.appendChild(renderSection(s)); });
